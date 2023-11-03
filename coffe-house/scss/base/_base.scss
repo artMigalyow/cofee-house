@@ -1,0 +1,13 @@
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    @include flclm;
+    background: $color-bg_body;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1360px;
+    margin: 0 auto;
+}
