@@ -4,10 +4,17 @@ body{
     @include flclm;
     background: $color-bg_body;
 }
+main{
+    @include flclm;
+    gap: 100px;
+}
 *{
     box-sizing: border-box;
 }
 .wrapper{
     width: 1360px;
     margin: 0 auto;
+}
+button{
+    cursor: pointer;
 }

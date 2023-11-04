@@ -1,25 +1,25 @@
 //* text
 
 @mixin textPrimary {
-    font-family: $fontFamily-primary;
+    font-family: $fontFamily-primary,sans-serif;
     font-size: $fontPrim-size;
     font-style: normal;
 }
 @mixin textTitle {
-    font-family: $fontFamily-primary;
+    font-family: $fontFamily-primary,sans-serif;
     font-size: $fontTitle-size;
     font-weight: 600;
 }
 
 @mixin textSubtitle {
-    font-family: $fontFamily-primary;
+    font-family: $fontFamily-primary,sans-serif;
     font-size: $fontSubtitle-size;
     font-style: normal;
     font-weight: 600;
 
 }
 @mixin textAnotheSub {
-    font-family: $fontFamily-primary;
+    font-family: $fontFamily-primary, sans-serif;
     font-size: $fontAnotheSubTitle;
     font-style: normal;
     font-weight: 600;
@@ -35,7 +35,7 @@
 }
 //* buttons
 @mixin btn-menuItem{
-    width: 61px;
+    width: 72px;
     height: 28px;
 }
 @mixin btn-tabItem{
@@ -43,7 +43,7 @@
     height: 30px;
     border-radius: 100px ;
 }
-@mixin btn-primery {
+@mixin btn-primary {
     width: 200px;
     height: 64px;
     border-radius: 100px;

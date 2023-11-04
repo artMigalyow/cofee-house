@@ -16,16 +16,20 @@
 }
 h1{
   @include textTitle;
+  color: $color-font-primary
 }
 h2{
   @include textSubtitle;
+  color: $color-font-primary
 }
 p{
   @include textPrimary;
+  color: $color-font-primary
 }
 span{
   @include textPrimary
 }
 h4{
   @include textAnotheSub;
+  color: $color-font-primary
 }

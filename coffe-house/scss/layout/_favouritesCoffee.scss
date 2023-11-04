@@ -1,0 +1,64 @@
+.favouritesCoffee {
+    .wrapper__favouritesCoffee {
+        @include flclm;
+        gap: 40px;
+        align-items: center;
+        .favCoffee__subtitle{
+            font-weight: 600;
+            line-height: 125%;
+            margin: 0;
+            .italic-word{
+                @include textSubtitle;
+                font-style: italic;
+                color: $color-font-accent;
+            }
+
+        }
+        .favCoffee__container{
+            @include flrow;
+            justify-content: space-between;
+            align-items: center;
+            width: inherit;
+            .favCoffee__slider{
+
+                .slide{
+                    @include flclm;
+                    align-items: center;
+                    max-width: 480px;
+                    gap: 16px;
+                    .slide__subTitle{
+                        font-weight: 600;
+                        margin: 0;
+                        color: $color-font-primary;
+
+                    }
+                    .slide__text{
+                        margin: 0;
+                        font-weight: 400;
+                        line-height: 150%;
+                        color: $color-font-primary;
+                        text-align: center;
+                        letter-spacing: 1.1px;
+
+
+                    }
+                    .slide__price{
+                        @include textAnotheSub;
+                        color: $color-font-primary;
+                        line-height: 125%;
+                    }
+                }
+            }
+        }
+        .pagination{
+            @include flrow;
+            gap: 12px;
+            .pagin__btn{
+                width: 40px;
+                height: 4px;
+                border-radius: 100px;
+                background: $color-bg-footer;
+            }
+        }
+    }
+}

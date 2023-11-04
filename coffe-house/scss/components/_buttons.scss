@@ -1,0 +1,34 @@
+.menu{
+    @include flrow;
+    @include btn-menuItem;
+    justify-content: space-between;
+    .menu__text{
+        @include textPrimary;
+        font-weight: 600;
+        line-height: 150%;
+        color: $color-font-primary;
+    }
+    .menu__icon{
+        background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+}
+.enjoy-btn{
+    @include btn-primary;
+    background: $color-bg_body;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    @include textPrimary;
+}
+.btn-slider{
+    @include btn-icon;
+    border: 1px solid $color-bg-footer;
+    background: $color-bg_body;
+
+}
+.btn-slider:hover{
+    background: $color-bg-footer;
+}
