@@ -360,6 +360,20 @@ h4 {
   color: #403F3D;
 }
 
+.italic-words {
+  font-family: Inter, sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-style: italic;
+  color: #B0907A;
+}
+
+.subtitle {
+  font-weight: 60px;
+  line-height: 125%;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -520,13 +534,6 @@ button {
   line-height: 105%;
   margin: 0;
 }
-.enjoy .wrapper__enjoy .container .enjoy__content .enjoy-title .enjoy-firstStr {
-  font-family: Inter, sans-serif;
-  font-size: 72px;
-  font-weight: 600;
-  font-style: italic;
-  color: #B0907A;
-}
 .enjoy .wrapper__enjoy .container .enjoy__content .enjoy-text {
   color: #E1D4C9;
   margin: 0;
@@ -542,14 +549,6 @@ button {
   font-weight: 600;
   line-height: 125%;
   margin: 0;
-}
-.favouritesCoffee .wrapper__favouritesCoffee .favCoffee__subtitle .italic-word {
-  font-family: Inter, sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 600;
-  font-style: italic;
-  color: #B0907A;
 }
 .favouritesCoffee .wrapper__favouritesCoffee .favCoffee__container {
   display: flex;
@@ -596,4 +595,31 @@ button {
   height: 4px;
   border-radius: 100px;
   background: #665F55;
+}
+
+.about .wrapper__about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about .wrapper__about .about__container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.about .wrapper__about .about__container .first_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about .wrapper__about .about__container .first_block img {
+  border-radius: 20px;
+}
+.about .wrapper__about .about__container .second_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about .wrapper__about .about__container .second_block img {
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -7,11 +7,7 @@
             font-weight: 600;
             line-height: 125%;
             margin: 0;
-            .italic-word{
-                @include textSubtitle;
-                font-style: italic;
-                color: $color-font-accent;
-            }
+            
 
         }
         .favCoffee__container{

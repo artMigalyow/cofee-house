@@ -20,11 +20,7 @@
                     font-weight: 600;
                     line-height: 105%;
                     margin: 0;
-                    .enjoy-firstStr{
-                        @include textTitle;
-                        font-style: italic;
-                        color: #B0907A;
-                    }
+                    
                 }
                 .enjoy-text{
                     color: $color-text-light;

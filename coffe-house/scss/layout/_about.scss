@@ -1,0 +1,28 @@
+.about{
+    .wrapper__about{
+        @include flclm;
+        gap: 40px;
+        .about__container{
+            @include flrow;
+            gap: 40px;
+            
+            .first_block{
+                @include flclm;
+                gap: 40px;
+                img{
+                    border-radius: 20px;
+                }
+
+            }
+            .second_block{
+                @include flclm;
+                gap: 40px;
+                img{
+                    border-radius: 20px;
+                }
+
+            }
+
+        }
+    }
+}

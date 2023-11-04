@@ -33,3 +33,13 @@ h4{
   @include textAnotheSub;
   color: $color-font-primary
 }
+.italic-words{
+  @include textSubtitle;
+  font-style: italic;
+  color: $color-font-accent;
+}
+.subtitle{
+  font-weight: 60px;
+  line-height: 125%;
+  
+}
