@@ -32,3 +32,53 @@
 .btn-slider:hover{
     background: $color-bg-footer;
 }
+.btn-store{
+    @include btn-primary;
+    @include flrow;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid $color-bg-footer;
+    padding-left: 20px;
+}
+.tab-item{
+    width: 115px;
+    height: 46px;
+    border-radius: 100px;
+    @include flrow;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid $color-border-light;
+    background: transparent;
+    .icon-block{
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background: $color-border-light;
+        padding: 0 7px;
+        display: flex;
+        align-items: center;
+
+    }
+    .name-icon{
+        font-weight: 600px;
+        line-height: 150%;
+    }
+
+
+}
+.btn_coffee{
+    background: $color-bg-footer;
+    .name-icon{
+        color: $color-text-light;
+    }
+}
+.social-btn{
+    @include btn-icon;
+    border: 1px solid $color-border-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

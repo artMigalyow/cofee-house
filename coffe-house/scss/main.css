@@ -329,6 +329,7 @@ h1 {
   font-size: 72px;
   font-weight: 600;
   color: #403F3D;
+  margin: 0;
 }
 
 h2 {
@@ -337,6 +338,7 @@ h2 {
   font-style: normal;
   font-weight: 600;
   color: #403F3D;
+  margin: 0;
 }
 
 p {
@@ -344,6 +346,7 @@ p {
   font-size: 16px;
   font-style: normal;
   color: #403F3D;
+  margin: 0;
 }
 
 span {
@@ -358,6 +361,7 @@ h4 {
   font-style: normal;
   font-weight: 600;
   color: #403F3D;
+  margin: 0;
 }
 
 .italic-words {
@@ -370,7 +374,7 @@ h4 {
 }
 
 .subtitle {
-  font-weight: 60px;
+  font-weight: 600;
   line-height: 125%;
 }
 
@@ -386,6 +390,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 100px;
+}
+
+footer {
+  margin-top: 100px;
 }
 
 * {
@@ -446,6 +454,62 @@ button {
 
 .btn-slider:hover {
   background: #665F55;
+}
+
+.btn-store {
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #665F55;
+  padding-left: 20px;
+}
+
+.tab-item {
+  width: 115px;
+  height: 46px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #C1B6AD;
+  background: transparent;
+}
+.tab-item .icon-block {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: #C1B6AD;
+  padding: 0 7px;
+  display: flex;
+  align-items: center;
+}
+.tab-item .name-icon {
+  font-weight: 600px;
+  line-height: 150%;
+}
+
+.btn_coffee {
+  background: #665F55;
+}
+.btn_coffee .name-icon {
+  color: #E1D4C9;
+}
+
+.social-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -622,4 +686,175 @@ button {
 }
 .about .wrapper__about .about__container .second_block img {
   border-radius: 20px;
+}
+
+.mobileApp .wrapper__mobileApp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 630px;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .text__content {
+  font-weight: 400;
+  line-height: 150%;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .apple {
+  background-image: url(/coffe-house/assets/svg/icon-apl.svg);
+  width: 36px;
+  height: 36px;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .google {
+  background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
+  width: 36px;
+  height: 36px;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .text-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .text-btn .textforDwnl {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .text-btn .name-store {
+  font-weight: 600;
+}
+.mobileApp .wrapper__mobileApp .mobile-img {
+  background-image: url(/coffe-house/assets/png/mobile-screens.png);
+  width: 630px;
+  height: 630px;
+}
+
+.menu-section .wrapper__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.menu-section .wrapper__menu .menu__subtitle {
+  max-width: 800px;
+  text-align: center;
+}
+.menu-section .wrapper__menu .menu-btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+.menu-section .wrapper__menu .menu-btn__container:nth-child(2) {
+  width: 90px;
+  height: 46px;
+}
+.menu-section .wrapper__menu .menu__catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 310px);
+  grid-template-rows: repeat(2, 506px);
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card {
+  border: 1px solid #C1B6AD;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card img {
+  border-radius: 40px;
+  width: 310px;
+  height: 340px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description {
+  margin: 20px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__subtitle {
+  line-height: 125%;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__text {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__price {
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.footer .wrapper__footer {
+  background: #665F55;
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  border-radius: 40px;
+  justify-content: start;
+  gap: 100px;
+  align-items: center;
+}
+.footer .wrapper__footer .ft__subtitle {
+  color: #E1D4C9;
+}
+.footer .wrapper__footer .footer__offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 530px;
+  height: 325px;
+  align-items: start;
+  gap: 40px;
+}
+.footer .wrapper__footer .footer__offer .ft__social {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-left: 0;
+  margin: 0;
+}
+.footer .wrapper__footer .footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer .wrapper__footer .footer__contact-info .ft__titleCont {
+  color: #E1D4C9;
+  line-height: 125%;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .ft__link {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 8px;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .ft__link a {
+  text-decoration: none;
+  color: #E1D4C9;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .ft__link .clock {
+  color: #E1D4C9;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

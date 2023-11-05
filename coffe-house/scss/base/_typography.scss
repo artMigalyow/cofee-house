@@ -16,22 +16,26 @@
 }
 h1{
   @include textTitle;
-  color: $color-font-primary
+  color: $color-font-primary;
+  margin: 0;
 }
 h2{
   @include textSubtitle;
-  color: $color-font-primary
+  color: $color-font-primary;
+  margin: 0;
 }
 p{
   @include textPrimary;
-  color: $color-font-primary
+  color: $color-font-primary;
+  margin: 0;
 }
 span{
   @include textPrimary
 }
 h4{
   @include textAnotheSub;
-  color: $color-font-primary
+  color: $color-font-primary;
+  margin: 0;
 }
 .italic-words{
   @include textSubtitle;
@@ -39,7 +43,7 @@ h4{
   color: $color-font-accent;
 }
 .subtitle{
-  font-weight: 60px;
+  font-weight: 600;
   line-height: 125%;
-  
+
 }
