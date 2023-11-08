@@ -16,16 +16,18 @@
             </div>
             <nav class="navigation">
                 <ul class="nav-list">
-                    <li class="list"><a href="#" class="list__link">Favorite coffee</a></li>
-                    <li class="list"><a href="#" class="list__link">About</a></li>
-                    <li class="list"><a href="#" class="list__link">Mobile app</a></li>
-                    <li class="list"><a href="#" class="list__link">Contacts</a></li>
+                    <li class="list"><a href="#favCoffee" class="list__link">Favorite coffee</a></li>
+                    <li class="list"><a href="#about" class="list__link">About</a></li>
+                    <li class="list"><a href="#mobApp" class="list__link">Mobile app</a></li>
+                    <li class="list"><a href="#ft" class="list__link">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="menu">
-                <span class="menu__text">Menu</span>
-                <div class="menu__icon"></div>
-            </div>
+            <form action="/coffe-house/menu.html" target="_blank">
+                <button class="header__menu">
+                    <span class="menu__text">Menu</span>
+                    <div class="menu__icon"></div>
+                </button>
+            </form>
         </div>
     </header>
     <main class="main">
@@ -36,12 +38,14 @@
                     <div class="enjoy__content">
                         <h1 class="enjoy-title"><span class="italic-words">Enjoy</span> premium coffee at our charming cafe</h1>
                         <p class="enjoy-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                        <button class="enjoy-btn">Menu</button>
+                        <form action="/coffe-house/menu.html" target="_blank">
+                            <button class="enjoy-btn">Menu</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="favouritesCoffee">
+        <section class="favouritesCoffee" id="favCoffee">
             <div class="wrapper wrapper__favouritesCoffee">
                 <h2 class="favCoffee__subtitle subtitle">Choose your <span class="italic-words">favorite </span>coffee</h2>
                 <div class="favCoffee__container">
@@ -67,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper wrapper__about">
                 <h2 class=" subtitle about__subtitle">Resource is <span class="italic-words">the perfect and cozy place</span> where you can enjoy a variety of coffee beverages, to relax, catch up with friends, or get some work done.</h2>
                 <div class="about__container">
@@ -82,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section class="mobileApp">
+        <section class="mobileApp" id="mobApp">
             <div class="wrapper wrapper__mobileApp">
                 <div class="mobileApp__content">
                     <h2 class="subtitle mobileApp__subtitle"><span class="italic-words">Download</span> Apps To Facilitate Ordering</h2>
@@ -107,9 +111,9 @@
                 <div class="mobile-img"></div>
             </div>
         </section>
-        
+
     </main>
-    <footer class="footer">
+    <footer class="footer" id="ft">
         <div class="wrapper wrapper__footer">
             <div class="footer__offer">
                 <h2 class="subtitle ft__subtitle"><span class="italic-words">Come visit us</span> just relax and enjoy cuppa coffee</h2>

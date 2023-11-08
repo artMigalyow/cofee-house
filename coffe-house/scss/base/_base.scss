@@ -1,8 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     max-width: 1440px;
     margin: 0 auto;
     @include flclm;
     background: $color-bg_body;
+
 }
 main{
     @include flclm;
@@ -10,6 +15,7 @@ main{
 }
 footer{
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 *{
     box-sizing: border-box;

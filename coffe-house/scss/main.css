@@ -378,6 +378,10 @@ h4 {
   line-height: 125%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -394,6 +398,7 @@ main {
 
 footer {
   margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 * {
@@ -409,14 +414,18 @@ button {
   cursor: pointer;
 }
 
-.menu {
+.header__menu {
   display: flex;
   flex-direction: row;
   width: 72px;
   height: 28px;
   justify-content: space-between;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
-.menu .menu__text {
+.header__menu .menu__text {
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -424,7 +433,7 @@ button {
   line-height: 150%;
   color: #403F3D;
 }
-.menu .menu__icon {
+.header__menu .menu__icon {
   background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
   background-size: cover;
   width: 20px;
@@ -739,64 +748,6 @@ button {
   height: 630px;
 }
 
-.menu-section .wrapper__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-.menu-section .wrapper__menu .menu__subtitle {
-  max-width: 800px;
-  text-align: center;
-}
-.menu-section .wrapper__menu .menu-btn__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
-}
-.menu-section .wrapper__menu .menu-btn__container:nth-child(2) {
-  width: 90px;
-  height: 46px;
-}
-.menu-section .wrapper__menu .menu__catalog {
-  display: grid;
-  grid-template-columns: repeat(4, 310px);
-  grid-template-rows: repeat(2, 506px);
-  row-gap: 40px;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card {
-  border: 1px solid #C1B6AD;
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card img {
-  border-radius: 40px;
-  width: 310px;
-  height: 340px;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description {
-  margin: 20px;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__subtitle {
-  line-height: 125%;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__text {
-  margin-top: 12px;
-  margin-bottom: 36px;
-  font-weight: 400;
-  line-height: 150%;
-}
-.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__price {
-  font-weight: 600;
-  line-height: 125%;
-}
-
 .footer .wrapper__footer {
   background: #665F55;
   display: flex;
@@ -857,4 +808,65 @@ button {
 .footer .wrapper__footer .footer__contact-info .contacts__links .ft__link .clock {
   color: #E1D4C9;
   font-weight: 600;
+}
+
+.menu-section .wrapper__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.menu-section .wrapper__menu .menu__subtitle {
+  max-width: 800px;
+  text-align: center;
+}
+.menu-section .wrapper__menu .menu-btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+.menu-section .wrapper__menu .menu-btn__container:nth-child(2) {
+  width: 90px;
+  height: 46px;
+}
+.menu-section .wrapper__menu .menu__catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 310px);
+  grid-template-rows: repeat(2, 506px);
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card {
+  border: 1px solid #C1B6AD;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card img {
+  border-radius: 40px;
+  width: 310px;
+  height: 340px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description {
+  margin: 20px;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__subtitle {
+  line-height: 125%;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__text {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card .menu-description .card__price {
+  font-weight: 600;
+  line-height: 125%;
+}
+.menu-section .wrapper__menu .menu__catalog .menu__card:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

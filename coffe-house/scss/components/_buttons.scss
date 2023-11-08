@@ -1,7 +1,11 @@
-.menu{
+.header__menu{
     @include flrow;
     @include btn-menuItem;
     justify-content: space-between;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    padding: 0;
     .menu__text{
         @include textPrimary;
         font-weight: 600;
