@@ -5,6 +5,7 @@
         justify-content: space-between;
         align-items: center;
         .logo{
+            cursor: pointer;
             @include flclm;
             align-items: center;
             width: 100px;
@@ -43,17 +44,64 @@
                 padding-left: 0;
                 .list{
                     list-style: none;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+
+
+
                     .list__link{
+                        display: block;
                         text-decoration: none;
                         @include textPrimary;
                         color: $color-font-primary;
                         font-weight: 600;
                         line-height: 150%;
 
+
+
                     }
+                    &::after{  /*interactive border bottom from navigation links*/
+                        width: 0;
+                        transition: all 0.5s linear;
+                        content: '';
+                        position: absolute;
+                        height: 2px;background: $color-font-primary;
+
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+
+                    }
+
+
                 }
+
+
             }
         }
+        .menu-link {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            &::after{
+                width: 0;
+                transition: all 0.5s linear;
+                content: '';
+                position: absolute;
+                height: 2px;background: $color-font-primary;
 
+            }
+
+            &:hover::after{
+                width: 100%;
+
+            }
+        }
     }
 }

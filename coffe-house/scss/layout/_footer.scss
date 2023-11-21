@@ -39,16 +39,14 @@
                 @include flclm;
                 gap: 16px;
                 .ft__link{
-
+                    text-decoration: none;
+                    color: $color-text-light;
+                    @include textPrimary;
+                    font-weight: 600;
                     @include flrow;
                     align-items:end;
                     gap: 8px;
-                    a {
-                        text-decoration: none;
-                        color: $color-text-light;
-                        @include textPrimary;
-                        font-weight: 600;
-                    }
+                    
                     .clock{
                         color: $color-text-light;
                         font-weight: 600;

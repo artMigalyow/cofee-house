@@ -25,14 +25,28 @@
             .menu__card{
                 border: 1px solid $color-border-light;
                 border-radius: 40px;
+
                 @include flclm;
-                align-items: start;
+                align-items: center;
                 justify-content: space-between;
 
-                img{
-                    border-radius: 40px;
+                .card__block{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
                     width: 310px;
-                    height: 340px;
+                    height: 310px;
+                    border-radius: 40px;
+
+                    img{
+                        display: block;
+                        transition: 1s;
+                        width: 340px;
+                        height: 340px;
+                        border-radius: 40px;
+
+                    }
                 }
                 .menu-description{
                     margin: 20px;
@@ -54,6 +68,14 @@
             }
             .menu__card:hover{
                 cursor: pointer;
+                img{
+                    transform: scale(0.9);
+
+
+                    background-size: cover;
+
+
+                }
             }
         }
     }
