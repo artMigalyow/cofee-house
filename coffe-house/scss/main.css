@@ -786,27 +786,66 @@ a {
   flex-direction: column;
   gap: 40px;
 }
-.about .wrapper__about .about__container .first_block img {
+.about .wrapper__about .about__container .first_block .about__conteinerForImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   border-radius: 20px;
-  width: 726px;
-  height: 726px;
-  transition: 1s;
 }
-.about .wrapper__about .about__container .first_block img:hover {
+.about .wrapper__about .about__container .first_block .about__conteinerForImg:hover img {
   transform: scale(0.9);
   background-size: cover;
+}
+.about .wrapper__about .about__container .first_block .about__conteinerForImg img {
+  display: block;
+  transition: 1s;
+  width: 726px;
+  height: 726px;
+  border-radius: 40px;
+}
+.about .wrapper__about .about__container .first_block .about__conteinerForImg:first-child {
+  border-radius: 20px;
+  max-width: 660px;
+  max-height: 590px;
+}
+.about .wrapper__about .about__container .first_block .about__conteinerForImg:nth-child(2) {
+  border-radius: 20px;
+  max-width: 660px;
+  max-height: 430px;
 }
 .about .wrapper__about .about__container .second_block {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.about .wrapper__about .about__container .second_block img {
+.about .wrapper__about .about__container .second_block .about__conteinerForImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   border-radius: 20px;
 }
-.about .wrapper__about .about__container .second_block img:hover {
+.about .wrapper__about .about__container .second_block .about__conteinerForImg:hover img {
   transform: scale(0.9);
   background-size: cover;
+}
+.about .wrapper__about .about__container .second_block .about__conteinerForImg img {
+  display: block;
+  transition: 1s;
+  width: 726px;
+  height: 726px;
+  border-radius: 40px;
+}
+.about .wrapper__about .about__container .second_block .about__conteinerForImg:first-child {
+  border-radius: 20px;
+  max-width: 660px;
+  max-height: 430px;
+}
+.about .wrapper__about .about__container .second_block .about__conteinerForImg:nth-child(2) {
+  border-radius: 20px;
+  max-width: 660px;
+  max-height: 590px;
 }
 
 .mobileApp .wrapper__mobileApp {
