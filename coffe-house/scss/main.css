@@ -414,6 +414,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .header__menu {
   display: flex;
   flex-direction: row;
@@ -508,6 +513,31 @@ button {
   background: transparent;
   border: 1px solid #665F55;
   padding-left: 20px;
+  transition: all 0.5s linear;
+}
+
+.apple__store:hover { /*store btn interactive*/
+  background-color: #665F55;
+}
+.apple__store:hover #apl-store {
+  background-image: url(/coffe-house/assets/svg/icon-apl-hover.svg);
+  width: 36px;
+  height: 36px;
+}
+.apple__store:hover .text-btn {
+  color: #E1D4C9;
+}
+
+.google__store:hover {
+  background-color: #665F55;
+}
+.google__store:hover #goog-store {
+  background-image: url(/coffe-house/assets/svg/icon-ggl-hover.svg);
+  width: 36px;
+  height: 36px;
+}
+.google__store:hover .text-btn {
+  color: #E1D4C9;
 }
 
 .tab-item {
@@ -550,6 +580,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.social-btn:hover {
+  background: #E1D4C9;
 }
 
 .header {
@@ -754,6 +788,13 @@ button {
 }
 .about .wrapper__about .about__container .first_block img {
   border-radius: 20px;
+  width: 726px;
+  height: 726px;
+  transition: 1s;
+}
+.about .wrapper__about .about__container .first_block img:hover {
+  transform: scale(0.9);
+  background-size: cover;
 }
 .about .wrapper__about .about__container .second_block {
   display: flex;
@@ -762,6 +803,10 @@ button {
 }
 .about .wrapper__about .about__container .second_block img {
   border-radius: 20px;
+}
+.about .wrapper__about .about__container .second_block img:hover {
+  transform: scale(0.9);
+  background-size: cover;
 }
 
 .mobileApp .wrapper__mobileApp {
@@ -789,11 +834,13 @@ button {
   background-image: url(/coffe-house/assets/svg/icon-apl.svg);
   width: 36px;
   height: 36px;
+  transition: all 0.5s linear;
 }
 .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .google {
   background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
   width: 36px;
   height: 36px;
+  transition: all 0.5s linear;
 }
 .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .text-btn {
   display: flex;
@@ -869,10 +916,27 @@ button {
   flex-direction: row;
   align-items: end;
   gap: 8px;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
 }
 .footer .wrapper__footer .footer__contact-info .contacts__links .ft__link .clock {
   color: #E1D4C9;
   font-weight: 600;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .ft__link::after {
+  transition: all 0.5s linear;
+  bottom: -5px;
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  background: #403F3D;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .ft__link:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 .menu-section .wrapper__menu {

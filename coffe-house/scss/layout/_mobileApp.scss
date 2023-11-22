@@ -19,11 +19,13 @@
                         background-image: url(/coffe-house/assets/svg/icon-apl.svg);
                         width: 36px;
                         height: 36px;
+                        transition: all 0.5s linear;
                     }
                     .google{
                         background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
                         width: 36px;
                         height: 36px;
+                        transition: all 0.5s linear;
                     }
                     .text-btn{
                         @include flclm;

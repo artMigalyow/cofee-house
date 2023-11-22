@@ -5,12 +5,19 @@
         .about__container{
             @include flrow;
             gap: 40px;
-            
+
             .first_block{
                 @include flclm;
                 gap: 40px;
                 img{
                     border-radius: 20px;
+                    width: 726px;
+                    height: 726px;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale((0.9));
+                        background-size: cover;
+                    }
                 }
 
             }
@@ -19,6 +26,10 @@
                 gap: 40px;
                 img{
                     border-radius: 20px;
+                    &:hover{
+                        transform: scale((0.9));
+                        background-size: cover;
+                    }
                 }
 
             }
