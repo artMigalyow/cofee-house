@@ -314,7 +314,7 @@ template {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("coffee-house/assets/fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -322,7 +322,7 @@ template {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("coffee-house/assets/fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 h1 {
   font-family: Inter, sans-serif;
@@ -440,10 +440,22 @@ a {
   color: #403F3D;
 }
 .header__menu .menu__icon {
-  background-image: url(../assets/svg/coffee-cup.svg);
+  background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
   background-size: cover;
   width: 20px;
   height: 20px;
+}
+
+.header__menu-activePage {
+  position: relative;
+}
+.header__menu-activePage::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #403F3D;
+  width: inherit;
+  bottom: 4px;
 }
 
 .enjoy-btn {
@@ -473,7 +485,7 @@ a {
 .enjoy-btn .menu__icon {
   visibility: hidden;
   opacity: 0;
-  background-image: url(../assets/svg/coffee-cup.svg);
+  background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -521,7 +533,7 @@ a {
   background-color: #665F55;
 }
 .apple__store:hover #apl-store {
-  background-image: url(../assets/svg/icon-apl-hover.svg);
+  background-image: url(/coffe-house/assets/svg/icon-apl-hover.svg);
   width: 36px;
   height: 36px;
 }
@@ -533,7 +545,7 @@ a {
   background-color: #665F55;
 }
 .google__store:hover #goog-store {
-  background-image: url(../assets/svg/icon-ggl-hover.svg);
+  background-image: url(/coffe-house/assets/svg/icon-ggl-hover.svg);
   width: 36px;
   height: 36px;
 }
@@ -564,6 +576,9 @@ a {
 .tab-item .name-icon {
   font-weight: 600px;
   line-height: 150%;
+}
+.tab-item:hover {
+  background: #665F55;
 }
 
 .btn_coffee {
@@ -606,7 +621,7 @@ a {
   position: relative;
 }
 .header .wrapper__header .logo .logo__title {
-  background-image: url(../assets/svg/Resource.svg);
+  background-image: url(/coffe-house/assets/svg/Resource.svg);
   width: 92.514px;
   height: 22.342px;
   flex-shrink: 0;
@@ -623,7 +638,7 @@ a {
   top: 6px;
 }
 .header .wrapper__header .logo .logo__name {
-  background-image: url(../assets/svg/Coffee\ House.svg);
+  background-image: url(/coffe-house/assets/svg/Coffee\ House.svg);
   width: 64.784px;
   height: 5.986px;
   flex-shrink: 0;
@@ -871,13 +886,13 @@ a {
   gap: 20px;
 }
 .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .apple {
-  background-image: url(../assets/svg/icon-apl.svg);
+  background-image: url(/coffe-house/assets/svg/icon-apl.svg);
   width: 36px;
   height: 36px;
   transition: all 0.5s linear;
 }
 .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .google {
-  background-image: url(../assets/svg/icon-ggl.svg);
+  background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
   width: 36px;
   height: 36px;
   transition: all 0.5s linear;
@@ -897,7 +912,7 @@ a {
   font-weight: 600;
 }
 .mobileApp .wrapper__mobileApp .mobile-img {
-  background-image: url(../assets/png/mobile-screens.png);
+  background-image: url(/coffe-house/assets/png/mobile-screens.png);
   width: 630px;
   height: 630px;
 }

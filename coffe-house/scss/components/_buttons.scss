@@ -21,6 +21,17 @@
     }
 
 }
+.header__menu-activePage{         //*FOR MENU PAGE WHEN ACTIVE
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #403F3D;
+        width: inherit;
+        bottom: 4px;
+    }
+}
 .enjoy-btn{
     @include flrow;
     flex-direction: row;
@@ -138,6 +149,9 @@
     .name-icon{
         font-weight: 600px;
         line-height: 150%;
+    }
+    &:hover{
+        background: #665F55;
     }
 
 
