@@ -605,7 +605,7 @@ a {
   position: relative;
 }
 .header .wrapper__header .logo .logo__title {
-  background-image: url(./assets/svg/Resource.svg);
+  background-image: url('/coffe-house/assets/svg/Resource.svg');
   width: 92.514px;
   height: 22.342px;
   flex-shrink: 0;
