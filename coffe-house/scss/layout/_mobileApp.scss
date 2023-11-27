@@ -16,13 +16,13 @@
                 gap: 20px;
                 .btn-store{
                     .apple{
-                        background-image: url(/coffe-house/assets/svg/icon-apl.svg);
+                        background-image: url(../assets/svg/icon-apl.svg);
                         width: 36px;
                         height: 36px;
                         transition: all 0.5s linear;
                     }
                     .google{
-                        background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
+                        background-image: url(../assets/svg/icon-ggl.svg);
                         width: 36px;
                         height: 36px;
                         transition: all 0.5s linear;
@@ -45,7 +45,7 @@
 
         }
         .mobile-img{
-            background-image: url(/coffe-house/assets/png/mobile-screens.png);
+            background-image: url(../assets/png/mobile-screens.png);
             width: 630px;
             height: 630px;
         }
