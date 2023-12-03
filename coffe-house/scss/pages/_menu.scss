@@ -12,10 +12,7 @@
             justify-content: center;
             gap: 16px;
         }
-        .menu-btn__container:nth-child(2){
-            width: 90px;
-            height: 46px;
-        }
+        
         .menu__catalog{
             display: grid;
             grid-template-columns: repeat(4, 310px);

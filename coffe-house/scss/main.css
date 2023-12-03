@@ -597,6 +597,10 @@ a {
 .tab-item:hover {
   background: #665F55;
 }
+.tab-item:nth-child(2) {
+  width: 90px;
+  height: 46px;
+}
 
 .btn_coffee {
   background: #665F55;
@@ -801,6 +805,9 @@ a {
   width: 40px;
   height: 4px;
   border-radius: 100px;
+  background: #C1B6AD;
+}
+.favouritesCoffee .wrapper__favouritesCoffee .pagination .pagin__btn:first-child {
   background: #665F55;
 }
 
@@ -1004,11 +1011,15 @@ a {
   position: absolute;
   left: 50%;
   height: 2px;
-  background: #403F3D;
+  background: #E1D4C9;
 }
 .footer .wrapper__footer .footer__contact-info .contacts__links .ft__link:hover::after {
   left: 0;
   width: 100%;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .link-time:hover::after {
+  cursor: auto;
+  width: 0;
 }
 
 .menu-section .wrapper__menu {
@@ -1026,10 +1037,6 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 16px;
-}
-.menu-section .wrapper__menu .menu-btn__container:nth-child(2) {
-  width: 90px;
-  height: 46px;
 }
 .menu-section .wrapper__menu .menu__catalog {
   display: grid;
