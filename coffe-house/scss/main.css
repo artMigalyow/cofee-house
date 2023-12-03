@@ -988,11 +988,15 @@ a {
   position: absolute;
   left: 50%;
   height: 2px;
-  background: #403F3D;
+  background: #E1D4C9;
 }
 .footer .wrapper__footer .footer__contact-info .contacts__links .ft__link:hover::after {
   left: 0;
   width: 100%;
+}
+.footer .wrapper__footer .footer__contact-info .contacts__links .link-time:hover::after {
+  cursor: auto;
+  width: 0;
 }
 
 .menu-section .wrapper__menu {
