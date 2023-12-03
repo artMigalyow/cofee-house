@@ -9,6 +9,9 @@
     font-family: $fontFamily-primary,sans-serif;
     font-size: $fontTitle-size;
     font-weight: 600;
+    @include media-mobile{
+        font-size: $mobile-fontTitle-size;
+    }
 }
 
 @mixin textSubtitle {
@@ -16,6 +19,9 @@
     font-size: $fontSubtitle-size;
     font-style: normal;
     font-weight: 600;
+    @include media-mobile{
+        font-size: $mobile-fontSubtitle-size;
+    }
 
 }
 @mixin textAnotheSub {
