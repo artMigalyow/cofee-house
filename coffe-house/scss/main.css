@@ -578,6 +578,10 @@ a {
 .tab-item:hover {
   background: #665F55;
 }
+.tab-item:nth-child(2) {
+  width: 90px;
+  height: 46px;
+}
 
 .btn_coffee {
   background: #665F55;
@@ -1014,10 +1018,6 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 16px;
-}
-.menu-section .wrapper__menu .menu-btn__container:nth-child(2) {
-  width: 90px;
-  height: 46px;
 }
 .menu-section .wrapper__menu .menu__catalog {
   display: grid;
