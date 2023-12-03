@@ -389,6 +389,16 @@ body {
   flex-direction: column;
   background: #E1D4C9;
 }
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    max-width: 380px;
+  }
+}
 
 main {
   display: flex;
@@ -409,6 +419,16 @@ footer {
   width: 1360px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    width: 688px;
+  }
+}
+@media (max-width: 380px) {
+  .wrapper {
+    width: 348px;
+  }
+}
 
 button {
   cursor: pointer;
@@ -416,8 +436,7 @@ button {
 
 a {
   cursor: pointer;
-  -webkit-text-decoration: n;
-          text-decoration: n;
+  text-decoration: none;
 }
 
 .header__menu {

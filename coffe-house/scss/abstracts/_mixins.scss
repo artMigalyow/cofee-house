@@ -64,3 +64,13 @@
     height: 44px;
     border-radius: 100px;
 }
+
+
+//**** Media query //
+
+@mixin media-tablet {
+    @media ( max-width:$tablet-width) {@content; }
+}
+@mixin media-mobile {
+    @media ( max-width: $mobile-width) {@content; }
+}
