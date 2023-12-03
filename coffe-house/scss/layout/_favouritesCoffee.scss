@@ -7,7 +7,7 @@
             font-weight: 600;
             line-height: 125%;
             margin: 0;
-            
+
 
         }
         .favCoffee__container{
@@ -53,7 +53,12 @@
                 width: 40px;
                 height: 4px;
                 border-radius: 100px;
-                background: $color-bg-footer;
+                background: $color-border-light;
+
+                &:first-child {
+
+                    background:$color-bg-footer;
+                }
             }
         }
     }
