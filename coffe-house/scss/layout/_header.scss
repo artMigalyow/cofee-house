@@ -4,6 +4,23 @@
         @include flrow;
         justify-content: space-between;
         align-items: center;
+        
+
+        @include media-tablet {
+            .navigation, .menu-link, .header__menu{
+                display: none;
+
+            }
+
+        }
+        @include media-mobile {
+            .navigation, .menu-link, .header__menu{
+                display: none;
+
+            }
+
+        }
+
         .logo{
             cursor: pointer;
             @include flclm;

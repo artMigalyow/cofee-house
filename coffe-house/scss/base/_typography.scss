@@ -18,11 +18,15 @@ h1{
   @include textTitle;
   color: $color-font-primary;
   margin: 0;
+  .italic-words{
+    font-size: $fontTitle-size;
+  }
 }
 h2{
   @include textSubtitle;
   color: $color-font-primary;
   margin: 0;
+
 }
 p{
   @include textPrimary;
