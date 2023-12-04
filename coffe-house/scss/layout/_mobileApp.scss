@@ -23,6 +23,7 @@
                     @include flclm;
                 }
                 gap: 20px;
+                width: max-content;
                 .btn-store{
                     .apple{
                         background-image: url(../assets/svg/icon-apl.svg);

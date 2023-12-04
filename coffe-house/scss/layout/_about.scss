@@ -15,6 +15,7 @@
             gap: 40px;
             .first_block{
                 @include flclm;
+                align-items: center;
                 gap: 40px;
                 .about__conteinerForImg{
                     display: flex;
@@ -59,6 +60,7 @@
 
             .second_block{
                 @include flclm;
+                align-items: center;
                 gap: 40px;
 
                 .about__conteinerForImg{
