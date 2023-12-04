@@ -225,3 +225,19 @@
         background: $color-bg_body;
     }
 }
+.menu__btn-refresh {
+    display: none;
+    @include btn-icon;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-bg-footer;
+    @include media-tablet {
+        display: flex;
+
+    }
+    @include media-mobile {
+        display: flex;
+
+    }
+}
