@@ -990,6 +990,7 @@ a {
 .about .wrapper__about .about__container .first_block {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 .about .wrapper__about .about__container .first_block .about__conteinerForImg {
@@ -1033,6 +1034,7 @@ a {
 .about .wrapper__about .about__container .second_block {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 .about .wrapper__about .about__container .second_block .about__conteinerForImg {
@@ -1106,6 +1108,8 @@ a {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media (max-width: 380px) {
   .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores {
