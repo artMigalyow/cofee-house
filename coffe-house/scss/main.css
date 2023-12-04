@@ -998,6 +998,7 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 40px;
   border-radius: 20px;
 }
 .about .wrapper__about .about__container .first_block .about__conteinerForImg:hover img {
@@ -1011,6 +1012,11 @@ a {
   height: 726px;
   border-radius: 40px;
 }
+@media (max-width: 380px) {
+  .about .wrapper__about .about__container .first_block .about__conteinerForImg img {
+    width: 100%;
+  }
+}
 .about .wrapper__about .about__container .first_block .about__conteinerForImg:first-child {
   border-radius: 20px;
   max-width: 660px;
@@ -1020,6 +1026,7 @@ a {
   border-radius: 20px;
   max-width: 660px;
   max-height: 430px;
+  border-radius: 40px;
 }
 @media (max-width: 768px) {
   .about .wrapper__about .about__container .first_block .about__conteinerForImg:nth-child(2) {
@@ -1054,6 +1061,11 @@ a {
   width: 726px;
   height: 726px;
   border-radius: 40px;
+}
+@media (max-width: 380px) {
+  .about .wrapper__about .about__container .second_block .about__conteinerForImg img {
+    width: 100%;
+  }
 }
 .about .wrapper__about .about__container .second_block .about__conteinerForImg:first-child {
   border-radius: 20px;
