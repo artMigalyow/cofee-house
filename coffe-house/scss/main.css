@@ -483,7 +483,7 @@ a {
 }
 
 .btn-burger {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -591,6 +591,11 @@ a {
   border-radius: 100px;
   border: 1px solid #665F55;
   background: #E1D4C9;
+}
+@media (max-width: 380px) {
+  .btn-slider {
+    display: none;
+  }
 }
 
 .btn-slider:hover {
@@ -863,6 +868,12 @@ a {
   color: #E1D4C9;
   margin: 0;
 }
+@media (max-width: 380px) {
+  .enjoy .wrapper__enjoy .container .enjoy__content .enjoy-text {
+    line-height: 150%;
+    letter-spacing: 0.5px;
+  }
+}
 
 .favouritesCoffee .wrapper__favouritesCoffee {
   display: flex;
@@ -874,6 +885,11 @@ a {
   font-weight: 600;
   line-height: 125%;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .favouritesCoffee .wrapper__favouritesCoffee .favCoffee__subtitle {
+    text-align: center;
+  }
 }
 .favouritesCoffee .wrapper__favouritesCoffee .favCoffee__container {
   display: flex;
@@ -888,6 +904,9 @@ a {
   align-items: center;
   max-width: 480px;
   gap: 16px;
+}
+.favouritesCoffee .wrapper__favouritesCoffee .favCoffee__container .favCoffee__slider .slide img {
+  width: 100%;
 }
 .favouritesCoffee .wrapper__favouritesCoffee .favCoffee__container .favCoffee__slider .slide .slide__subTitle {
   font-weight: 600;
@@ -1040,6 +1059,18 @@ a {
   align-items: center;
   gap: 100px;
 }
+@media (max-width: 380px) {
+  .mobileApp .wrapper__mobileApp {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .mobileApp .wrapper__mobileApp {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .mobileApp .wrapper__mobileApp .mobileApp__content {
   display: flex;
   flex-direction: column;
@@ -1054,6 +1085,12 @@ a {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+@media (max-width: 380px) {
+  .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mobileApp .wrapper__mobileApp .mobileApp__content .mobileApp__stores .btn-store .apple {
   background-image: url(../assets/svg/icon-apl.svg);
@@ -1083,8 +1120,15 @@ a {
 }
 .mobileApp .wrapper__mobileApp .mobile-img {
   background-image: url(../assets/png/mobile-screens.png);
+  background-size: cover;
   width: 630px;
   height: 630px;
+}
+@media (max-width: 380px) {
+  .mobileApp .wrapper__mobileApp .mobile-img {
+    width: 348px;
+    height: 348px;
+  }
 }
 
 .footer .wrapper__footer {
@@ -1100,14 +1144,32 @@ a {
 .footer .wrapper__footer .ft__subtitle {
   color: #E1D4C9;
 }
+@media (max-width: 768px) {
+  .footer .wrapper__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 60px;
+  }
+}
+@media (max-width: 380px) {
+  .footer .wrapper__footer {
+    padding: 60px 16px;
+    gap: 40px;
+  }
+}
 .footer .wrapper__footer .footer__offer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 530px;
-  height: 325px;
   align-items: start;
   gap: 40px;
+}
+@media (max-width: 380px) {
+  .footer .wrapper__footer .footer__offer {
+    max-width: 316px;
+  }
 }
 .footer .wrapper__footer .footer__offer .ft__social {
   display: flex;

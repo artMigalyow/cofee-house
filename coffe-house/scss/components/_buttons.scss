@@ -21,7 +21,7 @@
 
 }
 .btn-burger{
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -127,6 +127,9 @@
     @include btn-icon;
     border: 1px solid $color-bg-footer;
     background: $color-bg_body;
+    @include media-mobile {
+        display: none;
+    }
 
 }
 .btn-slider:hover{

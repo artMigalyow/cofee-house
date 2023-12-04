@@ -26,6 +26,7 @@ h2{
   @include textSubtitle;
   color: $color-font-primary;
   margin: 0;
+
 }
 p{
   @include textPrimary;

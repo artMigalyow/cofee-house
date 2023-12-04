@@ -59,6 +59,10 @@
                 .enjoy-text{
                     color: $color-text-light;
                     margin: 0;
+                    @include media-mobile{
+                        line-height: 150%;
+                        letter-spacing: 0.5px ;
+                    }
                 }
 
             }
