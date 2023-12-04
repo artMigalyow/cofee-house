@@ -827,7 +827,7 @@ a {
 }
 @media (max-width: 768px) {
   .enjoy .wrapper__enjoy {
-    background-image: url(/coffe-house/assets/png/img-hero.png);
+    background-image: url(../assets/png/img-hero.png);
     background-position: center;
     background-size: cover;
     height: 644px;
@@ -836,7 +836,7 @@ a {
 }
 @media (max-width: 380px) {
   .enjoy .wrapper__enjoy {
-    background-image: url(/coffe-house/assets/png/img-hero.png);
+    background-image: url(../assets/png/img-hero.png);
     background-position: center;
     background-size: cover;
     height: 552px;

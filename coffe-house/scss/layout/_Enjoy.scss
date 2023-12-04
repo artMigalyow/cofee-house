@@ -3,14 +3,14 @@
         position: relative;
         @include media-tablet{
 
-            background-image: url(/coffe-house/assets/png/img-hero.png);
+            background-image: url(../assets/png/img-hero.png);
             background-position: center;
             background-size: cover;
             height: 644px;
             border-radius: 40px;
         }
         @include media-mobile {
-            background-image: url(/coffe-house/assets/png/img-hero.png);
+            background-image: url(../assets/png/img-hero.png);
             background-position: center;
             background-size: cover;
             height: 552px;
