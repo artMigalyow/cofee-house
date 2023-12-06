@@ -7,6 +7,12 @@ body{
     margin: 0 auto;
     @include flclm;
     background: $color-bg_body;
+    @include media-tablet {
+        max-width: 768px;
+    }
+    @include media-mobile {
+        max-width: 380px;
+    }
 
 }
 main{
@@ -23,11 +29,17 @@ footer{
 .wrapper{
     width: 1360px;
     margin: 0 auto;
+    @include media-tablet {
+        width: 688px;
+    }
+    @include media-mobile {
+        width: 348px;
+    }
 }
 button{
     cursor: pointer;
 }
 a{
     cursor: pointer;
-    text-decoration: n
+    text-decoration: none;
 }

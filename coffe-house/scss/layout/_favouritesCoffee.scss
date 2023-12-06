@@ -7,8 +7,9 @@
             font-weight: 600;
             line-height: 125%;
             margin: 0;
-
-
+            @include media-tablet{
+                text-align: center;
+            }
         }
         .favCoffee__container{
             @include flrow;
@@ -22,6 +23,10 @@
                     align-items: center;
                     max-width: 480px;
                     gap: 16px;
+
+                    img {
+                        width: 100%;
+                    }
                     .slide__subTitle{
                         font-weight: 600;
                         margin: 0;
