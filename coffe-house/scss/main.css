@@ -510,6 +510,22 @@ a {
   border: 1.5px solid #403F3D;
   background: #665F55;
   border-radius: 40px;
+  transition: transform 0.3s linear;
+  transform: rotate(0);
+}
+
+.btn-burger-active {
+  position: relative;
+}
+.btn-burger-active .btn-burger__line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  transition: transform 0.3s linear;
+}
+.btn-burger-active .btn-burger__line:nth-child(2) {
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: transform 0.3s linear;
 }
 
 .header__menu-activePage {
