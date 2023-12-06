@@ -42,13 +42,34 @@
         display: flex;
     }
     .btn-burger__line{
+
         width: 18px;
         border: 1.5px solid $color-font-primary;
         background: $color-bg-footer;
         border-radius: 40px;
+        transition: transform 0.3s linear;
+        transform: rotate(0);
+
+    }
+
+}
+.btn-burger-active {
+    position: relative;
+    .btn-burger__line:nth-child(1){
+        transform: rotate(45deg);
+        position: absolute;
+        transition: transform 0.3s linear;
+
+
+    }
+    .btn-burger__line:nth-child(2) {
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: transform 0.3s linear;
+
     }
 }
-.header__menu-activePage{         //*FOR MENU PAGE WHEN ACTIVE
+    .header__menu-activePage{         //*FOR MENU PAGE WHEN ACTIVE
     position: relative;
     &::after{
         content: "";
