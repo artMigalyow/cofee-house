@@ -3,8 +3,8 @@ console.log('Checking validation of pages : +18\n The layout matches the desing:
 
 //! VARIABLES
 const BTN_BURGER = document.querySelector('.btn-burger');
-
-
+const MAIN = document.querySelector('.main');
+const BURGER_MENU = document.querySelector('.navigation');
 window.onload = function () {
     burgerClick();
 }
@@ -14,7 +14,15 @@ window.onload = function () {
 const burgerClick =() => {
     BTN_BURGER.addEventListener('click', (event) => {
         BTN_BURGER.classList.toggle('btn-burger-active');
-        // removeClassToClick(BTN_BURGER,'btn-burger-active');
+        BURGER_MENU.classList.toggle('openBurgerMenu');
+
+
+
+
+
+
+        removeClassToClick(BTN_BURGER,'btn-burger-active');
+        // removeClassToClick(BURGER_MENU,'openBurgerMenu');
 
 
     })
