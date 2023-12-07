@@ -92,24 +92,21 @@
                 }
                 @include media-tablet {
                     &{
-                        display: none;
                         display: flex;
                         padding: 60px 40px;
                         width: 100vw;
                         position: absolute;
                         top: 100px;
-
-                        left: 100%;
+                        left:0;
                         height: 1024px;
                         justify-content: flex-start;
-
                         z-index: 3;
                         background: #E1D4C9;
                         gap: 100px;
                         flex-direction: column;
                         align-items: center;
-                        transition: left 1s ease-out;
-
+                        transition: all 1s ease-out;
+                        transform: translateX(100%);
                         .nav-list{
                             @include flclm;
                             gap: 60px;
@@ -137,23 +134,21 @@
                 }
                 @include media-mobile {
                     &{
-                        display: none;
                         display: flex;
                         padding: 60px 40px;
                         width: 100vw;
                         position: absolute;
                         top: 100px;
-
-                        left: 100%;
+                        left:0;
                         height: 1024px;
                         justify-content: flex-start;
-
                         z-index: 3;
                         background: #E1D4C9;
                         gap: 100px;
                         flex-direction: column;
                         align-items: center;
-                        transition: left 1s ease-out;
+                        transition: all 1s ease-out;
+                        transform: translateX(100%);
 
                         .nav-list{
                             @include flclm;
@@ -175,6 +170,7 @@
                                     font-size: $fontSizeBurgerMenu;
 
                                 }
+
                             }
                         }
                     }
@@ -204,9 +200,9 @@
 
             }
         }
-        
+
         .openBurgerMenu{
-            left: 0;
+            transform: translateX(0);
 
         }
 

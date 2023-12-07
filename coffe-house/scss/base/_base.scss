@@ -9,9 +9,11 @@ body{
     background: $color-bg_body;
     @include media-tablet {
         max-width: 768px;
+        overflow-x: hidden;
     }
     @include media-mobile {
         max-width: 380px;
+        overflow-x: hidden;
     }
 
 }

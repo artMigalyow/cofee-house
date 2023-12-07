@@ -410,11 +410,13 @@ body {
 @media (max-width: 768px) {
   body {
     max-width: 768px;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 380px) {
   body {
     max-width: 380px;
+    overflow-x: hidden;
   }
 }
 
@@ -818,13 +820,12 @@ a {
 }
 @media (max-width: 768px) {
   .header .wrapper__header .navigation {
-    display: none;
     display: flex;
     padding: 60px 40px;
     width: 100vw;
     position: absolute;
     top: 100px;
-    left: 100%;
+    left: 0;
     height: 1024px;
     justify-content: flex-start;
     z-index: 3;
@@ -832,7 +833,8 @@ a {
     gap: 100px;
     flex-direction: column;
     align-items: center;
-    transition: left 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateX(100%);
   }
   .header .wrapper__header .navigation .nav-list {
     display: flex;
@@ -856,13 +858,12 @@ a {
 }
 @media (max-width: 380px) {
   .header .wrapper__header .navigation {
-    display: none;
     display: flex;
     padding: 60px 40px;
     width: 100vw;
     position: absolute;
     top: 100px;
-    left: 100%;
+    left: 0;
     height: 1024px;
     justify-content: flex-start;
     z-index: 3;
@@ -870,7 +871,8 @@ a {
     gap: 100px;
     flex-direction: column;
     align-items: center;
-    transition: left 1s ease-out;
+    transition: all 1s ease-out;
+    transform: translateX(100%);
   }
   .header .wrapper__header .navigation .nav-list {
     display: flex;
@@ -911,7 +913,7 @@ a {
   width: 100%;
 }
 .header .wrapper__header .openBurgerMenu {
-  left: 0;
+  transform: translateX(0);
 }
 
 .enjoy .wrapper__enjoy {
