@@ -50,7 +50,8 @@ const clickedMenuLinks = () => {    //*when clicked burger_menu_ links
             let withTarget = e.composedPath().includes(el)
             if (withTarget || e.composedPath().includes(BTN_MENU_LINK)) {
                 BURGER_MENU.classList.toggle('openBurgerMenu');
-                removeClassToClick(BTN_BURGER,'btn-burger-active');
+                BTN_BURGER.classList.toggle('btn-burger-active');
+
             }
         })
         })
