@@ -55,15 +55,30 @@
             @include flrow;
             gap: 12px;
             .pagin__btn{
-                width: 40px;
-                height: 4px;
+                position: relative;
+                width: 80px;
+                height: 20px;
                 border-radius: 100px;
                 background: $color-border-light;
 
-                &:first-child {
-
+                &:first-child::after {
+                    content: '';
+                    height: 20px;
+                    width: 0;
                     background:$color-bg-footer;
+                    z-index: 3;
+                    border-radius: 100px;
+                    display: inline-block;
+                    animation: background 5s linear infinite;
                 }
+            }
+        }
+        @keyframes background {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 80px;
             }
         }
     }

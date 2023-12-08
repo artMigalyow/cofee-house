@@ -6,7 +6,7 @@ const BTN_BURGER = document.querySelector('.btn-burger');
 const MAIN = document.querySelector('.main');
 const BURGER_MENU = document.querySelector('.navigation');
 const BR_MENU_LINKS = document.querySelector('.list')
-const BTN_MENU_LINK = document.querySelector('.menu-link')
+const BTN_MENU_LINK = document.querySelector('.header__menu')
 window.onload = function () {
     burgerClick();
     clickedMenuLinks();
@@ -46,9 +46,13 @@ const closeBurgerMenu = (menu,clas) => {
 const clickedMenuLinks = () => {    //*when clicked burger_menu_ links
     const childArr = document.querySelectorAll('.list');
     document.querySelector('.nav-list').addEventListener('click', (e) => {
+        if(e.target == document.querySelector('header__menu-activePage')){
+            e.preventDefault()
+        }
         childArr.forEach(el => {
             let withTarget = e.composedPath().includes(el)
-            if (withTarget || e.composedPath().includes(BTN_MENU_LINK)) {
+
+            if (withTarget || e.composedPath().includes(BTN_MENU_LINK) ) {
                 BURGER_MENU.classList.toggle('openBurgerMenu');
                 BTN_BURGER.classList.toggle('btn-burger-active');
 
@@ -57,5 +61,11 @@ const clickedMenuLinks = () => {    //*when clicked burger_menu_ links
         })
 }
 
-
+BURGER_MENU.addEventListener('click', (event) => {
+    let target = event.target;
+    switch(target.id){
+        case 'list':
+        console.log('hi')
+    }
+})
 
