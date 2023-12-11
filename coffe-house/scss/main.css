@@ -1051,8 +1051,8 @@ a {
 }
 .favouritesCoffee .wrapper__favouritesCoffee .pagination .pagin__btn {
   position: relative;
-  width: 80px;
-  height: 20px;
+  width: 40px;
+  height: 4px;
   border-radius: 100px;
   background: #C1B6AD;
 }
@@ -1061,12 +1061,13 @@ a {
     width: 0;
   }
   100% {
-    width: 80px;
+    width: 40px;
   }
 }
 .favouritesCoffee .wrapper__favouritesCoffee .animBtn:after {
   content: "";
-  height: 20px;
+  position: absolute;
+  height: 4px;
   width: 0;
   background: #665F55;
   z-index: 3;
