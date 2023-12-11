@@ -47,7 +47,7 @@
         border: 1.5px solid $color-font-primary;
         background: $color-bg-footer;
         border-radius: 40px;
-        transition: transform 0.3s linear;
+        transition: transform 0.3s linear ;
         transform: rotate(0);
 
     }
@@ -58,14 +58,14 @@
     .btn-burger__line:nth-child(1){
         transform: rotate(45deg);
         position: absolute;
-        transition: transform 0.3s linear;
+        transition: transform 0.3s linear  ;
 
 
     }
     .btn-burger__line:nth-child(2) {
         transform: rotate(-45deg);
         position: absolute;
-        transition: transform 0.3s linear;
+        transition: transform 0.3s linear ;
 
     }
 }
