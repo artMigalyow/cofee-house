@@ -61,16 +61,16 @@
                 border-radius: 100px;
                 background: $color-border-light;
 
-                &:first-child::after {
-                    content: '';
-                    height: 20px;
-                    width: 0;
-                    background:$color-bg-footer;
-                    z-index: 3;
-                    border-radius: 100px;
-                    display: inline-block;
-                    animation: background 5s linear infinite;
-                }
+                // &:first-child::after {
+                //     content: '';
+                //     height: 20px;
+                //     width: 0;
+                //     background:$color-bg-footer;
+                //     z-index: 3;
+                //     border-radius: 100px;
+                //     display: inline-block;
+                //     animation: background 5s linear infinite ;
+                // }
             }
         }
         @keyframes background {
@@ -80,6 +80,16 @@
             100%{
                 width: 80px;
             }
+        }
+        .animBtn:after {
+            content: '';
+            height: 20px;
+            width: 0;
+            background:$color-bg-footer;
+            z-index: 3;
+            border-radius: 100px;
+            display: inline-block;
+            animation: background 5s linear ;
         }
     }
 }
