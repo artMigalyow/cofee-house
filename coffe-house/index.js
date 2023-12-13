@@ -15,6 +15,7 @@ const btnPagin = document.querySelectorAll('.pagin__btn');
 
 
 window.onload = function () {
+    slideGenerated(dataSlides)
     paginBtnMove();
     setInterval(() => {
         paginBtnMove()
@@ -73,7 +74,6 @@ const clickedMenuLinks = () => {    //*when clicked burger_menu_ links
 }
 
 const paginBtnMove = () => {
-
     setTimeout(() => {
         btnPagin[2].classList.remove('animBtn');
         btnPagin[0].classList.add('animBtn');
@@ -86,10 +86,75 @@ const paginBtnMove = () => {
         btnPagin[1].classList.remove('animBtn');
         btnPagin[2].classList.add('animBtn');
     }, 10000);
+};
+//!     DATA
+const dataSlides = [
+    {
+        id:'1',
+        className: 'slide frappuccino',
+        imgToSourse: './assets/png/coffee-slider-1.png',
+        title: 'S’mores Frappuccino',
+        text: 'This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.',
+        price: '$5.50'
+    },
+    {
+        id:'2',
+        className: 'slide macchiato',
+        imgToSourse: './assets/png/coffee-slider-2.png',
+        title: 'Caramel Macchiato',
+        text: 'Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.',
+        price: '$5.00'
+    },
+    {
+        id:'3',
+        className: 'slide iceCoffee',
+        imgToSourse: './assets/png/coffee-slider-3.png',
+        title: 'Ice coffee',
+        text: 'A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.',
+        price: '$4.50'
+    }
+];
+// new  class coffeeSlide {
+//     id;
+//     name;
+//     img;
+//     title;
+//     text;
+//     price;
 
-
-
-
-
+//     constructor(){
+//         this.id = id;
+//         this.name = className;
+//         this.img = imgToSourse;
+//         this.title = title;
+//         this.text = text;
+//         this.price = price;
+//     }
+// }
+const slideGenerated = (dataSlides) => {
+    dataSlides.forEach( (el) => {
+        constructorSlide(el.id,el.className,el.imgToSourse,el.title,el.text,el.price)
+    })
 }
 
+const constructorSlide = ( id,className,urlImg,title,text,price) => {
+    const div = document.createElement('div');
+    div.id = id;
+    div.className = className;
+    document.querySelector('.favCoffee__slider').appendChild(div);
+    const imgToSlide = document.createElement('img');
+    imgToSlide.src = urlImg;
+    div.appendChild(imgToSlide);
+    const nameSlide = document.createElement('h4');
+    nameSlide.className = 'slide__subTitle';
+    nameSlide.textContent = title;
+    div.appendChild(nameSlide);
+    const textSlide =document.createElement('p');
+    textSlide.className = 'slide__text';
+    textSlide.textContent = text;
+    div.appendChild(textSlide);
+    const priceSlide = document.createElement('span');
+    priceSlide.className = 'slide__price';
+    priceSlide.textContent = price;
+    div.appendChild(priceSlide);
+}

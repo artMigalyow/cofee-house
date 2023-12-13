@@ -17,7 +17,12 @@
             align-items: center;
             width: inherit;
             .favCoffee__slider{
-
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: nowrap;
+                max-width: 480px;
+                overflow: hidden;
                 .slide{
                     @include flclm;
                     align-items: center;
@@ -25,7 +30,12 @@
                     gap: 16px;
 
                     img {
-                        width: 100%;
+                        width: 480px;
+                        height: 480px;
+                        @include media-mobile{
+                            width: 348px;
+                            height: 348px;
+                        }
                     }
                     .slide__subTitle{
                         font-weight: 600;
@@ -61,16 +71,7 @@
                 border-radius: 100px;
                 background: $color-border-light;
 
-                // &:first-child::after {
-                //     content: '';
-                //     height: 20px;
-                //     width: 0;
-                //     background:$color-bg-footer;
-                //     z-index: 3;
-                //     border-radius: 100px;
-                //     display: inline-block;
-                //     animation: background 5s linear infinite ;
-                // }
+
             }
         }
         @keyframes background {
