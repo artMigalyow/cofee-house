@@ -59,6 +59,11 @@
                         line-height: 125%;
                     }
                 }
+                .slide-move {
+                    position: relative;
+                    right : 0;
+                    transition: left .5s ease-in;
+                }
             }
         }
         .pagination{

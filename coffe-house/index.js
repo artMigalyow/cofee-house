@@ -11,17 +11,20 @@ const BURGER_MENU = document.querySelector('.navigation');
 const BR_MENU_LINKS = document.querySelector('.list');
 const BTN_MENU_LINK = document.querySelector('.header__menu');
 const btnPagin = document.querySelectorAll('.pagin__btn');
+const SLIDER_CONTAINER = document.querySelector('.favCoffee__container');
+
 
 
 
 window.onload = function () {
-    slideGenerated(dataSlides)
+    slideGenerated(dataSlides);
     paginBtnMove();
-    setInterval(() => {
-        paginBtnMove()
-    }, 15000);
+    // setInterval(() => {
+    //     paginBtnMove()
+    // }, 15000);
     burgerClick();
     clickedMenuLinks();
+    // clickBtnSlider();
 
 }
 
@@ -72,21 +75,72 @@ const clickedMenuLinks = () => {    //*when clicked burger_menu_ links
         })
         })
 }
+const clickBtnSlider = () => {
+    SLIDER_CONTAINER.addEventListener('click', (ev) => {
+        let click = ev.target;
+        let withBtnRight = click.classList.contains('btn-slider__right');
+        let withBtnLeft = click.classList.contains('btn-slider__left');
 
+        if(withBtnRight){
+            document.querySelectorAll('.slide').forEach((el) => {
+                let slidePosition  = el.style.right;
+                slidePosition = slidePosition.replace(/[a-zа-яё]/gi, '');
+                slidePosition = Number(slidePosition);
+                slidePosition += 480;
+                let maxPositionX = 480 * document.querySelectorAll('.slide').length-1
+                if( slidePosition > maxPositionX ){
+                    slidePosition = 0;
+                }
+                el.style.right = `${slidePosition}px`
+            })
+        }else if(withBtnLeft){
+            document.querySelectorAll('.slide').forEach((el) => {
+                let slidePosition  = el.style.right;
+                slidePosition = slidePosition.replace(/[a-zа-яё]/gi, '');
+                slidePosition = Number(slidePosition);
+                slidePosition -= 480;
+                let maxPositionX = -480 * document.querySelectorAll('.slide').length-1
+                if( slidePosition < maxPositionX ){
+                    slidePosition = 0;
+                }
+                el.style.right = `${slidePosition}px`
+            })
+        }
+
+    })
+}
 const paginBtnMove = () => {
-    setTimeout(() => {
-        btnPagin[2].classList.remove('animBtn');
-        btnPagin[0].classList.add('animBtn');
-    }, 0);
-    setTimeout(() => {
-        btnPagin[0].classList.remove('animBtn');
-        btnPagin[1].classList.add('animBtn');
-    }, 5000);
-    setTimeout(() => {
-        btnPagin[1].classList.remove('animBtn');
-        btnPagin[2].classList.add('animBtn');
-    }, 10000);
+    let posX = 0;
+    const slide = document.querySelectorAll('.slide');
+    slide.forEach((el) => {
+        el.classList.add('slide-move')
+    })
+    clickBtnSlider();
+
+    // const paginMove1 = setTimeout(() => {
+    //     btnPagin[2].classList.remove('animBtn');
+    //     slide.forEach((el)=> { el.style.right = '0'; el.style.transition = "right .5s ease-in"; })
+    //     btnPagin[0].classList.add('animBtn');
+    // }, 0);
+    // const paginMove2 = setTimeout(() => {
+    //     btnPagin[0].classList.remove('animBtn');
+    //     posX+=480;
+    //     slide.forEach((el)=> { el.style.right = `${posX}px`;
+    //         el.style.transition = "right .5s ease-in";
+    //     })
+    //     btnPagin[1].classList.add('animBtn');
+    // }, 5000);
+    // const paginMove3 = setTimeout(() => {
+    //     btnPagin[1].classList.remove('animBtn');
+    //     posX+=480;
+    //     slide.forEach((el)=> { el.style.right = `${posX}px`;el.style.transition = "right .5s ease-in"; })
+    //     btnPagin[2].classList.add('animBtn');
+    // }, 10000);
 };
+
+
+
+
 //!     DATA
 const dataSlides = [
     {
@@ -114,23 +168,6 @@ const dataSlides = [
         price: '$4.50'
     }
 ];
-// new  class coffeeSlide {
-//     id;
-//     name;
-//     img;
-//     title;
-//     text;
-//     price;
-
-//     constructor(){
-//         this.id = id;
-//         this.name = className;
-//         this.img = imgToSourse;
-//         this.title = title;
-//         this.text = text;
-//         this.price = price;
-//     }
-// }
 const slideGenerated = (dataSlides) => {
     dataSlides.forEach( (el) => {
         constructorSlide(el.id,el.className,el.imgToSourse,el.title,el.text,el.price)
@@ -158,3 +195,5 @@ const constructorSlide = ( id,className,urlImg,title,text,price) => {
     priceSlide.textContent = price;
     div.appendChild(priceSlide);
 }
+
+

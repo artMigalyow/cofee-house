@@ -314,7 +314,7 @@ template {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("coffee-house/assets/fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/inter-v13-latin/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -322,7 +322,7 @@ template {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("coffee-house/assets/fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/inter-v13-latin/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 h1 {
   font-family: Inter, sans-serif;
@@ -1058,6 +1058,11 @@ a {
   font-weight: 600;
   color: #403F3D;
   line-height: 125%;
+}
+.favouritesCoffee .wrapper__favouritesCoffee .favCoffee__container .favCoffee__slider .slide-move {
+  position: relative;
+  right: 0;
+  transition: left 0.5s ease-in;
 }
 .favouritesCoffee .wrapper__favouritesCoffee .pagination {
   display: flex;
