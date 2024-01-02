@@ -78,6 +78,7 @@
                     }
                 }
             }
+
             .menu__card:hover{
                 cursor: pointer;
                 img{
@@ -88,6 +89,9 @@
 
 
                 }
+            }
+            .hiddenCard {
+                display: none;
             }
         }
     }

@@ -17,6 +17,7 @@
             border-radius: 40px;
         }
         .enjoy__bg{
+            display: none;
             max-width: 1360px;
             border-radius: 40px;
             @include media-tablet {
@@ -28,6 +29,17 @@
                 display: none;
 
 
+            }
+        }
+        .enjoy-video {
+            width: 1360px;
+            border-radius: 40px;
+
+            @include media-tablet{
+                display: none;
+            }
+            @include media-mobile{
+                display: none;
             }
         }
         .container{

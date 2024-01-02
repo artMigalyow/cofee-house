@@ -19,9 +19,9 @@ const SLIDER_CONTAINER = document.querySelector('.favCoffee__container');
 window.onload = function () {
     slideGenerated(dataSlides);
     paginBtnMove();
-    // setInterval(() => {
-    //     paginBtnMove()
-    // }, 15000);
+    setInterval(() => {
+        paginBtnMove()
+    }, 15000);
     burgerClick();
     clickedMenuLinks();
     // clickBtnSlider();
@@ -117,26 +117,53 @@ const paginBtnMove = () => {
     })
     clickBtnSlider();
 
-    // const paginMove1 = setTimeout(() => {
-    //     btnPagin[2].classList.remove('animBtn');
-    //     slide.forEach((el)=> { el.style.right = '0'; el.style.transition = "right .5s ease-in"; })
-    //     btnPagin[0].classList.add('animBtn');
-    // }, 0);
-    // const paginMove2 = setTimeout(() => {
-    //     btnPagin[0].classList.remove('animBtn');
-    //     posX+=480;
-    //     slide.forEach((el)=> { el.style.right = `${posX}px`;
-    //         el.style.transition = "right .5s ease-in";
-    //     })
-    //     btnPagin[1].classList.add('animBtn');
-    // }, 5000);
-    // const paginMove3 = setTimeout(() => {
-    //     btnPagin[1].classList.remove('animBtn');
-    //     posX+=480;
-    //     slide.forEach((el)=> { el.style.right = `${posX}px`;el.style.transition = "right .5s ease-in"; })
-    //     btnPagin[2].classList.add('animBtn');
-    // }, 10000);
+    const paginMove1 = setTimeout(() => {
+        btnPagin[2].classList.remove('animBtn');
+        slide.forEach((el)=> { el.style.right = '0'; el.style.transition = "right .5s ease-in"; })
+        btnPagin[0].classList.add('animBtn');
+    }, 0);
+    const paginMove2 = setTimeout(() => {
+        btnPagin[0].classList.remove('animBtn');
+        posX+=480;
+        slide.forEach((el)=> { el.style.right = `${posX}px`;
+            el.style.transition = "right .5s ease-in";
+        })
+        btnPagin[1].classList.add('animBtn');
+    }, 5000);
+    const paginMove3 = setTimeout(() => {
+        btnPagin[1].classList.remove('animBtn');
+        posX+=480;
+        slide.forEach((el)=> { el.style.right = `${posX}px`;el.style.transition = "right .5s ease-in"; })
+        btnPagin[2].classList.add('animBtn');
+    }, 10000);
 };
+const slideGenerated = (dataSlides) => {
+    dataSlides.forEach( (el) => {
+        constructorSlide(el.id,el.className,el.imgToSourse,el.title,el.text,el.price)
+    })
+}
+
+const constructorSlide = ( id,className,urlImg,title,text,price) => {
+    const div = document.createElement('div');
+    div.id = id;
+    div.className = className;
+    document.querySelector('.favCoffee__slider').appendChild(div);
+    const imgToSlide = document.createElement('img');
+    imgToSlide.src = urlImg;
+    div.appendChild(imgToSlide);
+    const nameSlide = document.createElement('h4');
+    nameSlide.className = 'slide__subTitle';
+    nameSlide.textContent = title;
+    div.appendChild(nameSlide);
+    const textSlide =document.createElement('p');
+    textSlide.className = 'slide__text';
+    textSlide.textContent = text;
+    div.appendChild(textSlide);
+    const priceSlide = document.createElement('span');
+    priceSlide.className = 'slide__price';
+    priceSlide.textContent = price;
+    div.appendChild(priceSlide);
+}
 
 
 
@@ -168,32 +195,7 @@ const dataSlides = [
         price: '$4.50'
     }
 ];
-const slideGenerated = (dataSlides) => {
-    dataSlides.forEach( (el) => {
-        constructorSlide(el.id,el.className,el.imgToSourse,el.title,el.text,el.price)
-    })
-}
 
-const constructorSlide = ( id,className,urlImg,title,text,price) => {
-    const div = document.createElement('div');
-    div.id = id;
-    div.className = className;
-    document.querySelector('.favCoffee__slider').appendChild(div);
-    const imgToSlide = document.createElement('img');
-    imgToSlide.src = urlImg;
-    div.appendChild(imgToSlide);
-    const nameSlide = document.createElement('h4');
-    nameSlide.className = 'slide__subTitle';
-    nameSlide.textContent = title;
-    div.appendChild(nameSlide);
-    const textSlide =document.createElement('p');
-    textSlide.className = 'slide__text';
-    textSlide.textContent = text;
-    div.appendChild(textSlide);
-    const priceSlide = document.createElement('span');
-    priceSlide.className = 'slide__price';
-    priceSlide.textContent = price;
-    div.appendChild(priceSlide);
-}
+
 
 
