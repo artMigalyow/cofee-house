@@ -1,0 +1,108 @@
+.header{
+    padding: 20px 0;
+    .wrapper__header{
+        @include flrow;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            cursor: pointer;
+            @include flclm;
+            align-items: center;
+            width: 100px;
+            height: 60px;
+            position: relative;
+            .logo__title{
+                background-image: url(/coffe-house/assets/svg/Resource.svg);
+                width: 92.514px;
+                height: 22.342px;
+                flex-shrink: 0;
+                position: absolute;
+                top: 12.56px;
+                z-index: 1;
+            }
+            .logo__around{
+                width: 38px;
+                height: 38px;
+                border-radius: 100%;
+                background: $color-font-accent;
+                position: absolute;
+                top: 6px;
+            }
+            .logo__name{
+                background-image: url(/coffe-house/assets/svg/Coffee\ House.svg);
+                width: 64.784px;
+                height: 5.986px;
+                flex-shrink: 0;
+                position: absolute;
+                top: 48.1px;
+            }
+        }
+        .navigation{
+            .nav-list{
+                @include flrow;
+                gap: 40px;
+                padding-left: 0;
+                .list{
+                    list-style: none;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+
+
+
+                    .list__link{
+                        display: block;
+                        text-decoration: none;
+                        @include textPrimary;
+                        color: $color-font-primary;
+                        font-weight: 600;
+                        line-height: 150%;
+
+
+
+                    }
+                    &::after{  /*interactive border bottom from navigation links*/
+                        width: 0;
+                        transition: all 0.5s linear;
+                        content: '';
+                        position: absolute;
+                        height: 2px;background: $color-font-primary;
+
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+
+                    }
+
+
+                }
+
+
+            }
+        }
+        .menu-link {   /* interactive menu-btn navigation */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            &::after{
+                width: 0;
+                transition: all 0.5s linear;
+                content: '';
+                position: absolute;
+                height: 2px;
+                background: $color-font-primary;
+
+            }
+
+            &:hover::after{
+                width: 100%;
+
+            }
+        }
+    }
+}
