@@ -1,0 +1,17 @@
+.popup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 50rem;
+  height: 31.5rem;
+  margin: 50px auto;
+  position:fixed;
+  z-index: 3;
+  border: none;
+  border-radius: 40px;
+  background-color: $color-bg_body;
+  .card__img{
+    width: 235px;
+  }
+}
