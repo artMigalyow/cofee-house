@@ -587,21 +587,65 @@ a {
 }
 
 .popup {
+  width: 800px;
+  height: 504px;
+  background-color: #E1D4C9;
+  border: 1px solid black;
+  border-radius: 40px;
+  margin: 20px auto;
+  padding: 16px;
+  z-index: 3;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 50rem;
-  height: 31.5rem;
-  margin: 50px auto;
-  position: fixed;
-  z-index: 3;
-  border: none;
-  border-radius: 40px;
-  background-color: #E1D4C9;
 }
-.popup .card__img {
-  width: 235px;
+.popup .popup__img {
+  width: 310px;
+  height: 310px;
+  border-radius: 40px;
+}
+.popup .popup__content {
+  width: 458px;
+  height: 472px;
+  padding-left: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popup .popup__content .popup__title {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0;
+}
+.popup .popup__content .popup__descrip {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+.popup .popup__content .block_size .blck-btn-sz {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.popup .popup__content .block_size .blck-btn-sz .btn-sz {
+  width: 116px;
+  height: 46px;
+  border-radius: 100px;
+  border: none;
+  padding: 8px 16px 8px 8px;
+}
+.popup .popup__content .block_additeves .blck-btn-ad {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.popup .popup__content .block_additeves .blck-btn-ad .btn-add {
+  width: 116px;
+  height: 46px;
+  border-radius: 100px;
+  border: none;
+  padding: 8px 16px 8px 8px;
 }
 
 .header {

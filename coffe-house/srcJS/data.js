@@ -1,22 +1,6 @@
-import { Block, BtnBlock, ImgBlock, Popup } from "./classes.js";
-export const popup = [
-  new Popup("dialog", "popup"),
-  new ImgBlock("img", "card__img", "popup", "src_img"),
-  new Block("div", "content", "popup"),
-  new Block("h3", "card__title", "content", ""),
-  new Block("p", "card__text", "content", ""),
-  new BtnBlock("div", "card-coffeeSize", "content", {
-    num: 3,
-    tag: "button",
-    clsName: "coffeeSize__btn",
-    parent: "card-coffeeSize",
-    btnText: 'span',
-    btnDiv: 'span'
-  }),
-];
+import { Block, BtnBlock } from "./classes.js";
 
-export const btnSize = [
-  { size: "s", text: "200" },
-  { size: "m", text: "300" },
-  { size: "l", text: "400" },
+export const modal = [
+  new BtnBlock("div", "blck-btn-sz ", "block_size", 3, "btn-sz"),
+  new BtnBlock("div", "blck-btn-ad ", "block_additeves", 3, "btn-add"),
 ];

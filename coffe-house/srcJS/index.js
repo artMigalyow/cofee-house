@@ -1,12 +1,7 @@
-import { Popup } from "./classes.js";
-import { popup } from "./data.js";
+import { CATALOG } from "./const.js";
+import { clckedCard } from "./functions.js";
 
-// console.log(new Popup("dialog", "popup"))
-popup.forEach((el) => {
-  console.log(el)
 
-  el.getBlock()
-})
-const popupR = new Popup("dialog", "popup" );
-popupR.getBlock()
-// popup.forEach()
+
+
+CATALOG.addEventListener('click',clckedCard)

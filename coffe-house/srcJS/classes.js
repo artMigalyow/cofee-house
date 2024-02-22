@@ -1,45 +1,27 @@
 export class Block {
-  constructor(tag, clsName, parent, content) {
-    this.tag = tag;
-    this.clsName = clsName;
-    this.parent = parent;
-    if (content) {
-      this.content = content;
-    }
+  constructor(tag, name, append) {
+    (this.name = name), (this.tag = tag), (this.append = append);
   }
   getBlock() {
     const div = document.createElement(this.tag);
-    div.className = this.clsName;
-    if (typeof this.content === "string") {
-      div.textContent = this.content;
-    }
-    if (typeof this.parent === "string") {
-      document.querySelector(`.${this.parent}`).appendChild(div);
-    } else {
-      document.body.appendChild(div);
-    }
-    return div;
-  }
-}
-
-export class Popup extends Block {
-  constructor(tag, clsName) {
-    super(tag, clsName, parent);
-    this.tag;
-    this.clsName;
+    div.className = this.name;
+    document.querySelector(`.${this.append}`).appendChild(div);
   }
 }
 
 export class BtnBlock extends Block {
-  constructor(tag, clsName, content) {
-    super(tag, clsName, parent, content);
-
+  constructor(name, tag, append, num, btnName) {
+    super(name, tag, append);
+    this.num = num;
+    this.btnName = btnName;
   }
-}
-export class ImgBlock extends Block {
-  constructor(tag, clsName,parent,src) {
-    super(tag, clsName, parent);
-    
-    this.src = src;
+  getBtnBlock() {
+    this.getBlock()
+    for (let index = 0; index < this.num; index++) {
+      const btn = document.createElement('button');
+      btn.className = this.btnName;
+      document.querySelector(`.${this.name}`).appendChild(btn)
+    }
+
   }
 }
