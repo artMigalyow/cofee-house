@@ -1,35 +1,32 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     max-width: 1440px;
     margin: 0 auto;
     @include flclm;
     background: $color-bg_body;
-   
-
-
 }
-main{
+main {
     @include flclm;
     gap: 100px;
 }
-footer{
+footer {
     margin-top: 100px;
     margin-bottom: 40px;
 }
-*{
+* {
     box-sizing: border-box;
 }
-.wrapper{
+.wrapper {
     width: 1360px;
     margin: 0 auto;
 }
-button{
+button {
     cursor: pointer;
 }
-a{
+a {
     cursor: pointer;
     text-decoration: none;
 }
