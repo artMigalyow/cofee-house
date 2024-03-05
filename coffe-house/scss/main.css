@@ -601,7 +601,7 @@ a {
   display: flex;
   width: 800px;
   height: 504px;
-  border: 1px solid black;
+  border: none;
   border-radius: 40px;
   background: #E1D4C9;
   margin: 198px auto;
