@@ -7,19 +7,60 @@
     <title>menu</title>
 </head>
 <body>
-    <dialog class="popup">
-        <img class="popup__img" src="./assets/png/coffee-1.png" alt="">
-        <div class="popup__content">
-            <h3 class="popup__title"></h3>
-            <p class="popup__descrip"></p>
-            <div class="block_size">
-                <span class="block__name"></span>
-            </div>
-            <div class="block_additeves">
-                <span class="block__name"></span>
-            </div>
+    <div class="modal__bg">
+        <dialog class="mn-modal">
+      <div class="mn__block-img"></div>
+      <div class="mn__block-content">
+        <div class="cnt__header">
+          <span class="hdr__title">Irish coffee</span>
+          <span class="hdr__subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk</span>
         </div>
+        <div class="cnt__block-size">
+          <span class="block-text">Size</span>
+          <ul class="blck__btn">
+            <li class="btn_size">
+              <span class="size">S</span>
+              <span class="size-ml">ml</span>
+            </li>
+            <li class="btn_size">
+              <span class="size">M</span>
+              <span class="size-ml">ml</span>
+            </li>
+            <li class="btn_size">
+              <span class="size">L</span>
+              <span class="size-ml">ml</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cnt__block-additives">
+          <span class="block-text">Addatives</span>
+          <ul class="blck__btn">
+            <li class="btn_addtvs">
+              <span class="addtvs">1</span>
+              <span class="addtvs-name">Sugar</span>
+            </li>
+            <li class="btn_addtvs">
+              <span class="addtvs">2</span>
+              <span class="addtvs-name">Cinnamon</span>
+            </li>
+            <li class="btn_addtvs">
+              <span class="addtvs">3</span>
+              <span class="addtvs-name">Syrup</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cont__total">
+          <span class="ttl-text">Total:</span>
+          <span class="ttl-result">$</span>
+        </div>
+        <div class="cont__alert">
+          <span class="info-empty"></span>
+          <span class="alert-text">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</span>
+        </div>
+        <button class="cont__btn">Close</button>
+      </div>
     </dialog>
+    </div>
     <header class="header">
         <div class="wrapper wrapper__header">
             <a href="./index.html">

@@ -516,7 +516,8 @@ a {
   transition: all 0.5s linear;
 }
 
-.apple__store:hover { /*store btn interactive*/
+.apple__store:hover {
+  /*store btn interactive*/
   background-color: #665F55;
 }
 .apple__store:hover #apl-store {
@@ -586,66 +587,192 @@ a {
   background: #E1D4C9;
 }
 
-.popup {
+.modal__bg {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.modal__bg .mn-modal {
+  display: flex;
   width: 800px;
   height: 504px;
-  background-color: #E1D4C9;
   border: 1px solid black;
   border-radius: 40px;
-  margin: 20px auto;
+  background: #E1D4C9;
+  margin: 198px auto;
   padding: 16px;
   z-index: 3;
-  display: flex;
-  flex-direction: row;
 }
-.popup .popup__img {
-  width: 310px;
+.modal__bg .mn-modal .mn__block-img {
+  width: 100%;
   height: 310px;
   border-radius: 40px;
+  background-image: url("/coffe-house/assets/png/coffee-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.popup .popup__content {
-  width: 458px;
-  height: 472px;
-  padding-left: 20px;
-  gap: 20px;
+.modal__bg .mn-modal .mn__block-content {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
 }
-.popup .popup__content .popup__title {
+.modal__bg .mn-modal .mn__block-content .cnt__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__header .hdr__title {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 125%;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__header .hdr__subtitle {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size .block-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size .blck__btn {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  gap: 8px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size .blck__btn .btn_size {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 116px;
+  height: 46px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #C1B6AD;
+  border-radius: 100px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size .blck__btn .btn_size .size {
+  width: 30px;
+  height: 30px;
+  color: #403F3D;
+  background: #C1B6AD;
+  border-radius: 100px;
+  padding: 5.3px 0;
+  text-align: center;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-size .blck__btn .btn_size .size-ml {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives .block-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives .blck__btn {
+  gap: 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives .blck__btn .btn_addtvs {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  list-style: none;
+  max-width: 141px;
+  width: -moz-max-content;
+  width: max-content;
+  height: 46px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #C1B6AD;
+  border-radius: 100px;
+  gap: 8px;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives .blck__btn .btn_addtvs .addtvs {
+  width: 30px;
+  height: 30px;
+  color: #403F3D;
+  background: #C1B6AD;
+  border-radius: 100px;
+  padding: 5.3px 0;
+  text-align: center;
+}
+.modal__bg .mn-modal .mn__block-content .cnt__block-additives .blck__btn .btn_addtvs .addtvs-name {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal__bg .mn-modal .mn__block-content .cont__total {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal__bg .mn-modal .mn__block-content .cont__total span {
   font-family: Inter, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  margin-top: 0;
 }
-.popup .popup__content .popup__descrip {
+.modal__bg .mn-modal .mn__block-content .cont__alert {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #C1B6AD;
+  padding: 12px 0;
+  gap: 8px;
+}
+.modal__bg .mn-modal .mn__block-content .cont__alert .info-empty {
+  max-width: 16px;
+  width: 100%;
+  height: 16px;
+  border: 1px solid #403F3D;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.modal__bg .mn-modal .mn__block-content .cont__alert .alert-text {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.modal__bg .mn-modal .mn__block-content .cont__btn {
+  max-width: 438px;
+  border-radius: 100px;
+  border: 1px solid #665F55;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
-}
-.popup .popup__content .block_size .blck-btn-sz {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-.popup .popup__content .block_size .blck-btn-sz .btn-sz {
-  width: 116px;
-  height: 46px;
-  border-radius: 100px;
-  border: none;
-  padding: 8px 16px 8px 8px;
-}
-.popup .popup__content .block_additeves .blck-btn-ad {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-.popup .popup__content .block_additeves .blck-btn-ad .btn-add {
-  width: 116px;
-  height: 46px;
-  border-radius: 100px;
-  border: none;
-  padding: 8px 16px 8px 8px;
+  font-weight: 600;
+  background: transparent;
 }
 
 .header {

@@ -1,4 +1,4 @@
-.header__menu{
+.header__menu {
     @include flrow;
     @include btn-menuItem;
     justify-content: space-between;
@@ -7,21 +7,20 @@
     border: none;
     padding: 0;
 
-    .menu__text{
+    .menu__text {
         @include textPrimary;
         font-weight: 600;
         line-height: 150%;
         color: $color-font-primary;
     }
-    .menu__icon{
+    .menu__icon {
         background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
         background-size: cover;
         width: 20px;
         height: 20px;
     }
-
 }
-.enjoy-btn{
+.enjoy-btn {
     @include flrow;
     flex-direction: row;
     justify-content: center;
@@ -32,52 +31,47 @@
     border: none;
     transition: all 5.5s linear;
 
-    .menu__text{
+    .menu__text {
         @include textPrimary;
         font-weight: 600;
         line-height: 150%;
         color: $color-font-primary;
         margin-right: 0;
         transition: margin-right 0.3s linear;
-
     }
-    .menu__icon{
+    .menu__icon {
         visibility: hidden;
         opacity: 0;
         background-image: url(/coffe-house/assets/svg/coffee-cup.svg);
         background-size: cover;
         width: 20px;
         height: 20px;
-        transition: visibility 0.2s, opacity 0.5s linear;
+        transition:
+            visibility 0.2s,
+            opacity 0.5s linear;
         position: absolute;
         top: 20px;
         right: 60px;
-
-
-
-
     }
-    &:hover{
-        .menu__icon{
+    &:hover {
+        .menu__icon {
             visibility: inherit;
             opacity: 1;
         }
-        .menu__text{
+        .menu__text {
             margin-right: 8px;
-
         }
     }
 }
-.btn-slider{
+.btn-slider {
     @include btn-icon;
     border: 1px solid $color-bg-footer;
     background: $color-bg_body;
-
 }
-.btn-slider:hover{
+.btn-slider:hover {
     background: $color-bg-footer;
 }
-.btn-store{
+.btn-store {
     @include btn-primary;
     @include flrow;
     align-items: center;
@@ -87,10 +81,9 @@
     border: 1px solid $color-bg-footer;
     padding-left: 20px;
     transition: all 0.5s linear;
-
-
 }
-.apple__store:hover{  /*store btn interactive*/
+.apple__store:hover {
+    /*store btn interactive*/
     background-color: $color-bg-footer;
     #apl-store {
         background-image: url(/coffe-house/assets/svg/icon-apl-hover.svg);
@@ -101,7 +94,7 @@
         color: $color-bg_body;
     }
 }
-.google__store:hover{
+.google__store:hover {
     background-color: $color-bg-footer;
     #goog-store {
         background-image: url(/coffe-house/assets/svg/icon-ggl-hover.svg);
@@ -113,10 +106,7 @@
     }
 }
 
-
-
-
-.tab-item{
+.tab-item {
     width: 115px;
     height: 46px;
     border-radius: 100px;
@@ -125,7 +115,7 @@
     gap: 8px;
     border: 1px solid $color-border-light;
     background: transparent;
-    .icon-block{
+    .icon-block {
         width: 30px;
         height: 30px;
         border-radius: 100px;
@@ -133,22 +123,19 @@
         padding: 0 7px;
         display: flex;
         align-items: center;
-
     }
-    .name-icon{
+    .name-icon {
         font-weight: 600px;
         line-height: 150%;
     }
-
-
 }
-.btn_coffee{
+.btn_coffee {
     background: $color-bg-footer;
-    .name-icon{
+    .name-icon {
         color: $color-text-light;
     }
 }
-.social-btn{
+.social-btn {
     @include btn-icon;
     border: 1px solid $color-border-light;
     display: flex;
@@ -156,7 +143,8 @@
     justify-content: center;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background: $color-bg_body;
     }
 }
+
