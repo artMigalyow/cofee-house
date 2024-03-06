@@ -589,7 +589,7 @@ a {
 
 .modal__bg {
   position: fixed;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   justify-content: center;
