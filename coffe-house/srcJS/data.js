@@ -1,13 +1,6 @@
-//* --------popup----------*//
-
-import { Block } from "./classes.js";
+import { Block, BtnBlock } from "./classes.js";
 
 export const modal = [
-  new Block("div", "modal__bg"),
-  new Block("dialog", "mn-modal", "modal__bg"),
-  new Block("div", "mn__block-img", "mn-modal"),
-  new Block("div", "mn__block-content", "mn-modal"),
-  new Block("div", "cnt__header", "mn__block-content"),
-  new Block("span", "hdr__title", "cnt__header"),
-  new Block("span", "hdr__subtitle", "cnt__header"),
+  new BtnBlock("div", "blck-btn-sz ", "block_size", 3, "btn-sz"),
+  new BtnBlock("div", "blck-btn-ad ", "block_additeves", 3, "btn-add"),
 ];
