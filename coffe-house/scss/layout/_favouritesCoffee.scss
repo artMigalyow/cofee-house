@@ -7,8 +7,9 @@
             font-weight: 600;
             line-height: 125%;
             margin: 0;
-            
-
+            @include media-tablet{
+                text-align: center;
+            }
         }
         .favCoffee__container{
             @include flrow;
@@ -16,12 +17,26 @@
             align-items: center;
             width: inherit;
             .favCoffee__slider{
-
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: nowrap;
+                max-width: 480px;
+                overflow: hidden;
                 .slide{
                     @include flclm;
                     align-items: center;
                     max-width: 480px;
                     gap: 16px;
+
+                    img {
+                        width: 480px;
+                        height: 480px;
+                        @include media-mobile{
+                            width: 348px;
+                            height: 348px;
+                        }
+                    }
                     .slide__subTitle{
                         font-weight: 600;
                         margin: 0;
@@ -44,17 +59,44 @@
                         line-height: 125%;
                     }
                 }
+                .slide-move {
+                    position: relative;
+                    right : 0;
+                    transition: left .5s ease-in;
+                }
             }
         }
         .pagination{
             @include flrow;
             gap: 12px;
             .pagin__btn{
+                position: relative;
                 width: 40px;
                 height: 4px;
                 border-radius: 100px;
-                background: $color-bg-footer;
+                background: $color-border-light;
+
+
             }
+        }
+        @keyframes background {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 40px;
+            }
+        }
+        .animBtn:after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 0;
+            background:$color-bg-footer;
+            z-index: 3;
+            border-radius: 100px;
+            display: inline-block;
+            animation: background 5s linear ;
         }
     }
 }

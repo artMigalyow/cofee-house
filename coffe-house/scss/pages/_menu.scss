@@ -1,10 +1,17 @@
 .menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     .wrapper__menu{
         @include flclm;
         align-items: center;
         .menu__subtitle{
             max-width: 800px;
             text-align: center;
+            @include media-tablet {
+                max-width: 100%;
+            }
         }
         gap: 40px;
         .menu-btn__container{
@@ -12,22 +19,27 @@
             justify-content: center;
             gap: 16px;
         }
-        .menu-btn__container:nth-child(2){
-            width: 90px;
-            height: 46px;
-        }
         .menu__catalog{
             display: grid;
             grid-template-columns: repeat(4, 310px);
             grid-template-rows: repeat(2,506px);
             row-gap: 40px;
             column-gap: 40px;
+            @include media-tablet {
+                grid-template-columns: repeat(2, 310px);
+                grid-template-rows: repeat(2, 506px);
+                overflow: hidden;
+                max-height: 1052px;
+            }
+            @include media-mobile {
+                grid-template-columns: repeat(1,310px);
+                max-height: 2144px;
+            }
             .menu__card{
                 border: 1px solid $color-border-light;
                 border-radius: 40px;
 
                 @include flclm;
-                align-items: center;
                 justify-content: space-between;
 
                 .card__block{
@@ -66,6 +78,7 @@
                     }
                 }
             }
+
             .menu__card:hover{
                 cursor: pointer;
                 img{
@@ -77,6 +90,10 @@
 
                 }
             }
+            .hiddenCard {
+                display: none;
+            }
         }
     }
+
 }

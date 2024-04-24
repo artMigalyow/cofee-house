@@ -1,6 +1,12 @@
 .mobileApp{
     .wrapper__mobileApp{
         @include flrow;
+        @include media-mobile {
+            @include flclm;
+        }
+        @include media-tablet{
+            @include flclm;
+        }
         align-items: center;
         gap: 100px;
         .mobileApp__content{
@@ -13,16 +19,20 @@
             }
             .mobileApp__stores{
                 @include flrow;
+                @include media-mobile {
+                    @include flclm;
+                }
                 gap: 20px;
+                width: max-content;
                 .btn-store{
                     .apple{
-                        background-image: url(/coffe-house/assets/svg/icon-apl.svg);
+                        background-image: url(../assets/svg/icon-apl.svg);
                         width: 36px;
                         height: 36px;
                         transition: all 0.5s linear;
                     }
                     .google{
-                        background-image: url(/coffe-house/assets/svg/icon-ggl.svg);
+                        background-image: url(../assets/svg/icon-ggl.svg);
                         width: 36px;
                         height: 36px;
                         transition: all 0.5s linear;
@@ -45,9 +55,15 @@
 
         }
         .mobile-img{
-            background-image: url(/coffe-house/assets/png/mobile-screens.png);
+            background-image: url(../assets/png/mobile-screens.png);
+            background-size: cover;
             width: 630px;
             height: 630px;
+            @include media-mobile {
+
+                width: 348px;
+                height: 348px;
+            }
         }
     }
 }

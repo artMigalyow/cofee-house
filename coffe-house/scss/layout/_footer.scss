@@ -10,13 +10,26 @@
         justify-content: start;
         gap: 100px;
         align-items: center;
+        @include media-tablet {
+            @include flclm;
+            align-items:flex-start;
+            padding: 100px 60px;
+
+        }
+        @include media-mobile {
+            padding: 60px 16px;
+            gap: 40px;
+        }
         .footer__offer{
             @include flclm;
             justify-content: space-between;
             max-width: 530px;
-            height: 325px;
             align-items: start;
             gap: 40px;
+            @include media-mobile {
+                max-width: 316px;
+
+            }
             .ft__social{
                 @include flrow;
                 gap: 12px;
@@ -52,6 +65,7 @@
                         color: $color-text-light;
                         font-weight: 600;
                     }
+
                     &::after{                       //** Link interactive border-bottom;
                         transition: all 0.5s linear;
                         bottom: -5px;
@@ -61,7 +75,7 @@
                         left: 50%;
 
                         height: 2px;
-                        background: $color-font-primary;
+                        background: $color-bg_body;
 
                     }
                     &:hover::after{
@@ -70,10 +84,15 @@
                         width: 100%;
 
                     }
-
+                }
+                .link-time:hover::after{
+                    cursor:auto;
+                    width: 0;
                 }
             }
         }
 
     }
 }
+
+

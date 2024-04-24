@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./scss/main.css">
     <title>menu</title>
 </head>
@@ -18,18 +19,22 @@
             </a>
             <nav class="navigation">
                 <ul class="nav-list">
-                    <li class="list"><a href="#" class="list__link">Favorite coffee</a></li>
-                    <li class="list"><a href="#" class="list__link">About</a></li>
-                    <li class="list"><a href="#" class="list__link">Mobile app</a></li>
-                    <li class="list"><a href="#" class="list__link">Contacts</a></li>
+                    <li class="list"><a href="./index.html#favCoffee" class="list__link">Favorite coffee</a></li>
+                    <li class="list"><a href="./index.html#about" class="list__link">About</a></li>
+                    <li class="list"><a href="./index.html#mobApp" class="list__link">Mobile app</a></li>
+                    <li class="list"><a href="./index.html#ft" class="list__link">Contacts</a></li>
                 </ul>
+                <form action="./menu.html" class="menu-link" >
+                    <button class="header__menu header__menu-activePage" disabled = 'disabled'>
+                        <span class="menu__text">Menu</span>
+                        <object data="./assets/svg/coffee-cup.svg" class="menu__icon"></object>
+                    </button>
+                </form>
             </nav>
-            <form action="./menu.html" >
-                <button class="header__menu" disabled = 'disabled'>
-                    <span class="menu__text">Menu</span>
-                    <div class="menu__icon"></div>
-                </button>
-            </form>
+            <button class="btn-burger">
+                <span class="btn-burger__line"></span>
+                <span class="btn-burger__line"></span>
+            </button>
         </div>
     </header>
     <main class="main">
@@ -37,7 +42,7 @@
             <div class="wrapper wrapper__menu">
                 <h2 class="subtitle menu__subtitle">Behind each of our cups hides an <span class="italic-words">amazing surprise</span></h2>
                 <div class="menu-btn__container">
-                    <button class="tab-item btn_coffee" disabled = 'disabled'>
+                    <button class="tab-item btn_coffee" >
                         <div class="icon-block"><object data="./assets/svg/coffee.svg" class="icon-coffee"></object></div>
                         <span class="name-icon">Coffee</span>
                     </button>
@@ -51,7 +56,7 @@
                     </button>
                 </div>
                 <div class="menu__catalog">
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-1.png" alt="coffee-1">
                         </div>
@@ -61,7 +66,7 @@
                             <span class="card__price">$7.00</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-2.png" alt="coffee-2">
                         </div>
@@ -71,7 +76,7 @@
                             <span class="card__price">$7.00</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-3.png" alt="coffee-3">
                         </div>
@@ -81,7 +86,7 @@
                             <span class="card__price">$5.50</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-4.png" alt="caffee-4">
                         </div>
@@ -91,7 +96,7 @@
                             <span class="card__price">$5.00</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-5.png" alt="caffee-5">
                         </div>
@@ -101,7 +106,7 @@
                             <span class="card__price">$4.50</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-6.png" alt="caffee-6">
                         </div>
@@ -111,7 +116,7 @@
                             <span class="card__price">$5.50</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-7.png" alt="caffee-7">
                         </div>
@@ -121,7 +126,7 @@
                             <span class="card__price">$5.50</span>
                         </div>
                     </div>
-                    <div class="menu__card">
+                    <div class="menu__card card-coffee">
                         <div class="card__block">
                             <img src="./assets/png/coffee-8.png" alt="caffee-8">
                         </div>
@@ -134,6 +139,14 @@
 
                 </div>
             </div>
+            <button class="menu__btn-refresh">
+                <svg class="refresh-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="refresh">
+                    <path id="Ellipse" d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Ellipse_2" d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </button>
         </section>
     </main>
     <footer class="footer">
@@ -150,20 +163,23 @@
                 <h4 class="ft__titleCont">Contacts</h4>
                 <div class="contacts__links">
                     <a href="https://www.google.com/maps/search/8558+Green+Rd/@53.8935296,27.4956288,11z?entry=ttu" target="_blank" rel="noopener noreferrer" class="ft__link link-adress">
-                        <object data="./assets/svg/pin-alt.svg" type=""></object>
+                        <object data="./assets/svg/pin-alt.svg"></object>
                         <span>8558 Green Rd.,  LA</span>
                     </a>
                     <a href="tel:+1 (603) 555-0123" class="ft__link link-phone">
-                        <object data="./assets/svg/phone.svg" type=""></object>
+                        <object data="./assets/svg/phone.svg"></object>
                         <span>+1 (603) 555-0123</span>
                     </a>
                     <div class="ft__link link-time">
-                        <object data="./assets/svg/clock.svg" type=""></object>
+                        <object data="./assets/svg/clock.svg"></object>
                         <span class="clock">Mon-Sat: 9:00 AM – 23:00 PM</span>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script type="module" src="./menu.js">
+
+    </script>
 </body>
 </html>

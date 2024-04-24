@@ -1,151 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
     <title>coffee House</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="wrapper wrapper__header">
-            <div class="logo">
-                <div class="logo__title"></div>
-                <div class="logo__around"></div>
-                <span class="logo__name"></span>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-list">
-                    <li class="list"><a href="#favCoffee" class="list__link">Favorite coffee</a></li>
-                    <li class="list"><a href="#about" class="list__link">About</a></li>
-                    <li class="list"><a href="#mobApp" class="list__link">Mobile app</a></li>
-                    <li class="list"><a href="#ft" class="list__link">Contacts</a></li>
-                </ul>
-            </nav>
-            <form class="menu-link" action="./menu.html">
-                <button class="header__menu">
-                    <span class="menu__text">Menu</span>
-                    <div class="menu__icon"></div>
-                </button>
-            </form>
+      <div class="wrapper wrapper__header">
+        <div class="logo">
+          <div class="logo__title"></div>
+          <div class="logo__around"></div>
+          <span class="logo__name"></span>
         </div>
+        <nav class="navigation" id="style_burgerMenu">
+          <ul class="nav-list">
+            <li class="list">
+              <a href="#favCoffee" class="list__link">Favorite coffee</a>
+            </li>
+            <li class="list"><a href="#about" class="list__link">About</a></li>
+            <li class="list">
+              <a href="#mobApp" class="list__link">Mobile app</a>
+            </li>
+            <li class="list"><a href="#ft" class="list__link">Contacts</a></li>
+          </ul>
+          <form class="menu-link" action="./menu.html">
+            <button class="header__menu">
+              <span class="menu__text">Menu</span>
+              <object
+                data="./assets/svg/coffee-cup.svg"
+                class="menu__icon"
+              ></object>
+            </button>
+          </form>
+        </nav>
+        <button class="btn-burger">
+          <span class="btn-burger__line"></span>
+          <span class="btn-burger__line"></span>
+        </button>
+      </div>
     </header>
     <main class="main">
-        <section class="enjoy">
-            <div class="wrapper wrapper__enjoy">
-                <img class="enjoy__bg" src="./assets/png/img-hero.png" alt="img-hero">
-                <div class="container">
-                    <div class="enjoy__content">
-                        <h1 class="enjoy-title"><span class="italic-words">Enjoy</span> premium coffee at our charming cafe</h1>
-                        <p class="enjoy-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                        <form action="./menu.html">
-                            <button class="enjoy-btn">
-                                <span class="menu__text">Menu</span>
-                                <div class="menu__icon"></div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+      <section class="enjoy">
+        <div class="wrapper wrapper__enjoy">
+          <img
+            class="enjoy__bg"
+            src="./assets/png/img-hero.png"
+            alt="img-hero"
+          />
+          <video
+            class="enjoy-video"
+            loop
+            autoplay
+            poster="./assets/png/img-hero.png"
+            preload="auto"
+            muted
+            src="./assets/video/video (2160p).mp4"
+          ></video>
+          <div class="container">
+            <div class="enjoy__content">
+              <h1 class="enjoy-title">
+                <span class="italic-words">Enjoy</span> premium coffee at our
+                charming cafe
+              </h1>
+              <p class="enjoy-text">
+                With its inviting atmosphere and delicious coffee options, the
+                Coffee House Resource is a popular destination for coffee lovers
+                and those seeking a warm and inviting space to enjoy their
+                favorite beverage.
+              </p>
+              <form action="./menu.html">
+                <button class="enjoy-btn">
+                  <span class="menu__text">Menu</span>
+                  <object
+                    data="./assets/svg/coffee-cup.svg"
+                    class="menu__icon"
+                  ></object>
+                </button>
+              </form>
             </div>
-        </section>
-        <section class="favouritesCoffee" id="favCoffee">
-            <div class="wrapper wrapper__favouritesCoffee">
-                <h2 class="favCoffee__subtitle subtitle">Choose your <span class="italic-words">favorite </span>coffee</h2>
-                <div class="favCoffee__container">
-                    <button class="btn-slider btn-slider__left">
-                        <object data="./assets/svg/arrow-left.svg" type=""></object>
-                    </button>
-                    <div class="favCoffee__slider">
-                        <div class="slide Frappuccino">
-                            <img src="./assets/png/coffee-slider-1.png" alt="frappucino">
-                            <h4 class="slide__subTitle">S’mores Frappuccino</h4>
-                            <p class="slide__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                            <span class="slide__price">$5.50</span>
-                        </div>
-                    </div>
-                    <button class="btn-slider btn-slider__right">
-                        <object data="./assets/svg/arrow-right.svg" type=""></object>
-                    </button>
-                </div>
-                <div class="pagination">
-                    <div class="pagin__btn"></div>
-                    <div class="pagin__btn"></div>
-                    <div class="pagin__btn"></div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="favouritesCoffee" id="favCoffee">
+        <div class="wrapper wrapper__favouritesCoffee">
+          <h2 class="favCoffee__subtitle subtitle">
+            Choose your <span class="italic-words">favorite </span>coffee
+          </h2>
+          <div class="favCoffee__container">
+            <button class="btn-slider btn-slider__left">
+              <object data="./assets/svg/arrow-left.svg"></object>
+            </button>
+            <div class="favCoffee__slider"></div>
+            <button class="btn-slider btn-slider__right">
+              <object data="./assets/svg/arrow-right.svg"></object>
+            </button>
+          </div>
+          <div class="pagination">
+            <div class="pagin__btn"></div>
+            <div class="pagin__btn"></div>
+            <div class="pagin__btn"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="wrapper wrapper__about">
+          <h2 class="subtitle about__subtitle">
+            Resource is
+            <span class="italic-words">the perfect and cozy place</span> where
+            you can enjoy a variety of coffee beverages, to relax, catch up with
+            friends, or get some work done.
+          </h2>
+          <div class="about__container">
+            <div class="first_block">
+              <div class="about__conteinerForImg">
+                <img src="./assets/png/box.png" alt="box" />
+              </div>
+              <div class="about__conteinerForImg">
+                <img src="./assets/png/about-2.png" alt="box2" />
+              </div>
             </div>
-        </section>
-        <section class="about" id="about">
-            <div class="wrapper wrapper__about">
-                <h2 class=" subtitle about__subtitle">Resource is <span class="italic-words">the perfect and cozy place</span> where you can enjoy a variety of coffee beverages, to relax, catch up with friends, or get some work done.</h2>
-                <div class="about__container">
-                    <div class="first_block">
-                        <div class="about__conteinerForImg"><img src="./assets/png/box.png" alt="box"></div>
-                        <div class="about__conteinerForImg"><img src="./assets/png/about-2.png" alt="box2"></div>
-                    </div>
-                    <div class="second_block">
-                        <div class="about__conteinerForImg"><img src="./assets/png/about-3.png" alt="about-3"></div>
-                        <div class="about__conteinerForImg"><img src="./assets/png/about-4.png" alt="about-4"></div>
-                    </div>
-                </div>
+            <div class="second_block">
+              <div class="about__conteinerForImg">
+                <img src="./assets/png/about-3.png" alt="about-3" />
+              </div>
+              <div class="about__conteinerForImg">
+                <img src="./assets/png/about-4.png" alt="about-4" />
+              </div>
             </div>
-        </section>
-        <section class="mobileApp" id="mobApp">
-            <div class="wrapper wrapper__mobileApp">
-                <div class="mobileApp__content">
-                    <h2 class="subtitle mobileApp__subtitle"><span class="italic-words">Download</span> Apps To Facilitate Ordering</h2>
-                    <p class="text__content">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-                    <div class="mobileApp__stores">
-                        <button class=" btn-store apple__store">
-                            <div class="apple" id = 'apl-store'></div>
-                            <div class="text-btn">
-                                <span class="textforDwnl">Download on the</span>
-                                <span class="name-store">App Store</span>
-                            </div>
-                        </button>
-                        <button class=" btn-store google__store">
-                            <div class="google" id = "goog-store"></div>
-                            <div class="text-btn">
-                                <span class="textforDwnl">Download on the</span>
-                                <span class="name-store">Google Play</span>
-                            </div>
-                        </button>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobileApp" id="mobApp">
+        <div class="wrapper wrapper__mobileApp">
+          <div class="mobileApp__content">
+            <h2 class="subtitle mobileApp__subtitle">
+              <span class="italic-words">Download</span> Apps To Facilitate
+              Ordering
+            </h2>
+            <p class="text__content">
+              Download the Resource app today and experience the comfort of
+              ordering your favorite coffee from wherever you are
+            </p>
+            <div class="mobileApp__stores">
+              <button class="btn-store apple__store">
+                <div class="apple" id="apl-store"></div>
+                <div class="text-btn">
+                  <span class="textforDwnl">Download on the</span>
+                  <span class="name-store">App Store</span>
                 </div>
-                <div class="mobile-img"></div>
+              </button>
+              <button class="btn-store google__store">
+                <div class="google" id="goog-store"></div>
+                <div class="text-btn">
+                  <span class="textforDwnl">Download on the</span>
+                  <span class="name-store">Google Play</span>
+                </div>
+              </button>
             </div>
-        </section>
-
+          </div>
+          <div class="mobile-img"></div>
+        </div>
+      </section>
     </main>
     <footer class="footer" id="ft">
-        <div class="wrapper wrapper__footer">
-            <div class="footer__offer">
-                <h2 class="subtitle ft__subtitle"><span class="italic-words">Come visit us</span> just relax and enjoy cuppa coffee</h2>
-                <ul class="ft__social">
-                    <li class="social-btn" ><a class="link-tw" href="http://www.facebook.com"><object class="fb" data='./assets/svg/twitter.svg'></object></a></liс>
-                    <li class="social-btn" ><a class="link-inst" href="http://www.instagram.com"><object data='./assets/svg/instagram.svg'></object></a></li>
-                    <li class="social-btn" ><a class="link-fb" href="http://www.facebook.com"><object data='./assets/svg/facebook.svg'></object></a></li>
-                </ul>
-            </div>
-            <div class="footer__contact-info">
-                <h4 class="ft__titleCont">Contacts</h4>
-                <div class="contacts__links">
-                    <a href="https://www.google.com/maps/search/8558+Green+Rd/@53.8935296,27.4956288,11z?entry=ttu" target="_blank" rel="noopener noreferrer" class="ft__link link-adress">
-                        <object data="./assets/svg/pin-alt.svg" type=""></object>
-                        <span>8558 Green Rd.,  LA</span>
-                    </a>
-                    <a href="tel:+1 (603) 555-0123" class="ft__link link-phone">
-                        <object data="./assets/svg/phone.svg" type=""></object>
-                        <span>+1 (603) 555-0123</span>
-                    </a>
-                    <div class="ft__link link-time">
-                        <object data="./assets/svg/clock.svg" type=""></object>
-                        <span class="clock">Mon-Sat: 9:00 AM – 23:00 PM</span>
-                    </div>
-                </div>
-            </div>
+      <div class="wrapper wrapper__footer">
+        <div class="footer__offer">
+          <h2 class="subtitle ft__subtitle">
+            <span class="italic-words">Come visit us</span> just relax and enjoy
+            cuppa coffee
+          </h2>
+          <ul class="ft__social">
+            <li class="social-btn">
+              <a class="link-tw" href="http://www.facebook.com"
+                ><object class="fb" data="./assets/svg/twitter.svg"></object
+              ></a>
+            </li>
+            <li class="social-btn">
+              <a class="link-inst" href="http://www.instagram.com"
+                ><object data="./assets/svg/instagram.svg"></object
+              ></a>
+            </li>
+            <li class="social-btn">
+              <a class="link-fb" href="http://www.facebook.com"
+                ><object data="./assets/svg/facebook.svg"></object
+              ></a>
+            </li>
+          </ul>
         </div>
+        <div class="footer__contact-info">
+          <h4 class="ft__titleCont">Contacts</h4>
+          <div class="contacts__links">
+            <a
+              href="https://www.google.com/maps/search/8558+Green+Rd/@53.8935296,27.4956288,11z?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ft__link link-adress"
+            >
+              <object data="./assets/svg/pin-alt.svg"></object>
+              <span>8558 Green Rd., LA</span>
+            </a>
+            <a href="tel:+16035550123" class="ft__link link-phone">
+              <object data="./assets/svg/phone.svg"></object>
+              <span>+1 (603) 555-0123</span>
+            </a>
+            <div class="ft__link link-time">
+              <object data="./assets/svg/clock.svg"></object>
+              <span class="clock">Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script type="module" src="./srcJS/index.js"></script>
-</body>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
-<object data="" type=""></object>
