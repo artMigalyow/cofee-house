@@ -1,0 +1,156 @@
+.popup__bg {
+  
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  background: #403F3DCC ;
+  @include flclm;
+  justify-content: center;
+
+
+
+  .menu__popup {
+    width: 800px;
+
+    height: 504px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 40px;
+    border: none;
+    background-color: $color-bg_body;
+    .popup__img {
+      width: 310px;
+      height: 310px;
+      border-radius: 40px;
+    }
+    .popup__description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: calc(100% - 310px);
+      .popup__title {
+        @include textAnotheSub;
+      }
+      .popup__text {
+        @include textPrimary;
+      }
+      .block__size {
+        .block__text {
+          @include textPrimary;
+          margin-bottom: 8px;
+        }
+        .block__btn {
+          width: max-content;
+          @include flrow;
+          gap: 8px;
+          .btn__size {
+            border-radius: 100px;
+            background: transparent;
+            width: max-content;
+            height: 46px;
+            padding: 8px;
+            @include flrow;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #c1b6ad;
+            .btn__size--number {
+              margin-left: 0;
+            }
+            .btn__empty {
+              margin-left: 0;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              padding: 6.3px;
+              background-color: #c1b6ad;
+            }
+          }
+          .btn__size:hover{
+            background: #665F55;
+          }
+        }
+      }
+      .block__additives {
+        .block__text {
+          @include textPrimary;
+          margin-bottom: 8px;
+        }
+        .block__btn {
+          width: max-content;
+          @include flrow;
+          gap: 8px;
+
+          .btn__additives {
+            border-radius: 100px;
+            background: transparent;
+            width: max-content;
+            height: 46px;
+            padding: 8px;
+            @include flrow;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #c1b6ad;
+            .btn__empty {
+              margin-left: 0;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              padding: 6.3px;
+              background-color: #c1b6ad;
+            }
+            .btn__text {
+              margin-left: 0;
+              font-weight: 400;
+            }
+          }
+          .btn__additives:hover{
+            background: #665F55;
+          }
+        }
+      }
+      .popup__total {
+        @include flrow;
+        justify-content: space-between;
+        .total__text {
+          @include textAnotheSub;
+        }
+        .card__price {
+          @include textAnotheSub;
+        }
+      }
+      .popup__alert {
+        @include flrow;
+        gap: 8px;
+        padding: 12px 0 12px 0;
+        border-top: 1px solid $color-border-light;
+        .alert__empty {
+          width: 13.33px;
+          height: 13.33px;
+
+          border-radius: 100%;
+          border: 1px solid #403f3d;
+        }
+        .alert__text {
+          font-size: 10px;
+          font-weight: 600;
+          font-family: $fontFamily-primary, sans-serif;
+          letter-spacing: 0.7px;
+        }
+      }
+      .popup__btn {
+        width: 100%;
+        height: 44px;
+        background: transparent;
+        border: 1px solid #665f55;
+        border-radius: 100px;
+        @include textPrimary;
+        font-weight: 600;
+        line-height: 150%;
+      }
+    }
+  }
+}
